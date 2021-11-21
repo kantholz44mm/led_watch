@@ -519,34 +519,6 @@ F 3 "" H 6200 2300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	7700 1900 7700 1750
-Connection ~ 7700 1900
-Wire Wire Line
-	7700 2300 7700 2450
-Connection ~ 7700 2300
-$Comp
-L Connector:TestPoint TP6
-U 1 1 619CABCC
-P 7700 1750
-F 0 "TP6" H 7758 1868 50  0000 L CNN
-F 1 "TP_GND" H 7758 1777 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7900 1750 50  0001 C CNN
-F 3 "~" H 7900 1750 50  0001 C CNN
-	1    7700 1750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint TP7
-U 1 1 619CFA24
-P 7700 2450
-F 0 "TP7" H 7642 2476 50  0000 R CNN
-F 1 "TP_3V3" H 7642 2567 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7900 2450 50  0001 C CNN
-F 3 "~" H 7900 2450 50  0001 C CNN
-	1    7700 2450
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
 	6100 3050 6250 3050
 $Comp
 L Device:R_Small R51
