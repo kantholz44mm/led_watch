@@ -22,17 +22,6 @@ Wire Wire Line
 Wire Wire Line
 	4900 5200 4900 5350
 $Comp
-L Device:R_Small R24
-U 1 1 619AC458
-P 4350 5900
-F 0 "R24" V 4154 5900 50  0000 C CNN
-F 1 "3.3k" V 4245 5900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 4350 5900 50  0001 C CNN
-F 3 "~" H 4350 5900 50  0001 C CNN
-	1    4350 5900
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0110
 U 1 1 619ACD04
 P 3950 6000
@@ -228,12 +217,8 @@ Wire Wire Line
 Connection ~ 5850 7150
 Text Label 6200 7150 0    50   ~ 0
 VCC_LED
-Text Label 5000 650  0    50   ~ 0
-VCC_LED
 Wire Wire Line
 	5200 2500 5200 2350
-Wire Wire Line
-	4800 650  5000 650 
 $Comp
 L Device:LED_Small D27
 U 1 1 61BA0782
@@ -246,21 +231,6 @@ F 3 "~" V 4800 1250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small R35
-U 1 1 61BA0788
-P 4800 950
-F 0 "R35" V 4850 1050 50  0000 L CNN
-F 1 "660R" V 4900 850 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 4800 950 50  0001 C CNN
-F 3 "~" H 4800 950 50  0001 C CNN
-	1    4800 950 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4800 1050 4800 1150
-Wire Wire Line
-	4800 850  4800 650 
-$Comp
 L Device:LED_Small D25
 U 1 1 61BA07A1
 P 4400 1250
@@ -272,23 +242,6 @@ F 3 "~" V 4400 1250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small R33
-U 1 1 61BA07A7
-P 4400 950
-F 0 "R33" V 4450 1050 50  0000 L CNN
-F 1 "660R" V 4500 850 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 4400 950 50  0001 C CNN
-F 3 "~" H 4400 950 50  0001 C CNN
-	1    4400 950 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4400 1050 4400 1150
-Wire Wire Line
-	4400 850  4400 650 
-Wire Wire Line
-	4400 650  4600 650 
-$Comp
 L Device:LED_Small D26
 U 1 1 61BA07B0
 P 4600 1250
@@ -299,25 +252,6 @@ F 3 "~" V 4600 1250 50  0001 C CNN
 	1    4600 1250
 	0    1    1    0   
 $EndComp
-$Comp
-L Device:R_Small R34
-U 1 1 61BA07B6
-P 4600 950
-F 0 "R34" V 4650 1050 50  0000 L CNN
-F 1 "660R" V 4700 850 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 4600 950 50  0001 C CNN
-F 3 "~" H 4600 950 50  0001 C CNN
-	1    4600 950 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4600 1050 4600 1150
-Wire Wire Line
-	4600 850  4600 650 
-Connection ~ 4600 650 
-Wire Wire Line
-	4600 650  4800 650 
-Connection ~ 4800 650 
 Wire Wire Line
 	6100 4100 6350 4100
 Wire Wire Line
@@ -333,10 +267,6 @@ F 3 "" H 5800 5700 50  0001 C CNN
 	1    5800 5700
 	1    0    0    -1  
 $EndComp
-Text Label 4000 650  0    50   ~ 0
-VCC_LED
-Wire Wire Line
-	3800 650  4000 650 
 $Comp
 L Device:LED_Small D15
 U 1 1 61C87801
@@ -349,21 +279,6 @@ F 3 "~" V 3800 1250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small R19
-U 1 1 61C87807
-P 3800 950
-F 0 "R19" V 3850 1050 50  0000 L CNN
-F 1 "660R" V 3900 850 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 3800 950 50  0001 C CNN
-F 3 "~" H 3800 950 50  0001 C CNN
-	1    3800 950 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3800 1050 3800 1150
-Wire Wire Line
-	3800 850  3800 650 
-$Comp
 L Device:LED_Small D13
 U 1 1 61C8780F
 P 3400 1250
@@ -374,23 +289,6 @@ F 3 "~" V 3400 1250 50  0001 C CNN
 	1    3400 1250
 	0    1    1    0   
 $EndComp
-$Comp
-L Device:R_Small R17
-U 1 1 61C87815
-P 3400 950
-F 0 "R17" V 3450 1050 50  0000 L CNN
-F 1 "660R" V 3500 850 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 3400 950 50  0001 C CNN
-F 3 "~" H 3400 950 50  0001 C CNN
-	1    3400 950 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3400 1050 3400 1150
-Wire Wire Line
-	3400 850  3400 650 
-Wire Wire Line
-	3400 650  3600 650 
 $Comp
 L Device:LED_Small D14
 U 1 1 61C8781E
@@ -403,29 +301,6 @@ F 3 "~" V 3600 1250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small R18
-U 1 1 61C87824
-P 3600 950
-F 0 "R18" V 3650 1050 50  0000 L CNN
-F 1 "660R" V 3700 850 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 3600 950 50  0001 C CNN
-F 3 "~" H 3600 950 50  0001 C CNN
-	1    3600 950 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3600 1050 3600 1150
-Wire Wire Line
-	3600 850  3600 650 
-Connection ~ 3600 650 
-Wire Wire Line
-	3600 650  3800 650 
-Connection ~ 3800 650 
-Text Label 6000 650  0    50   ~ 0
-VCC_LED
-Wire Wire Line
-	5800 650  6000 650 
-$Comp
 L Device:LED_Small D18
 U 1 1 61CB9555
 P 5800 1250
@@ -436,21 +311,6 @@ F 3 "~" V 5800 1250 50  0001 C CNN
 	1    5800 1250
 	0    1    1    0   
 $EndComp
-$Comp
-L Device:R_Small R23
-U 1 1 61CB955B
-P 5800 950
-F 0 "R23" V 5850 1050 50  0000 L CNN
-F 1 "660R" V 5900 850 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 5800 950 50  0001 C CNN
-F 3 "~" H 5800 950 50  0001 C CNN
-	1    5800 950 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5800 1050 5800 1150
-Wire Wire Line
-	5800 850  5800 650 
 $Comp
 L Device:LED_Small D16
 U 1 1 61CB9563
@@ -463,23 +323,6 @@ F 3 "~" V 5400 1250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small R21
-U 1 1 61CB9569
-P 5400 950
-F 0 "R21" V 5450 1050 50  0000 L CNN
-F 1 "660R" V 5500 850 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 5400 950 50  0001 C CNN
-F 3 "~" H 5400 950 50  0001 C CNN
-	1    5400 950 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5400 1050 5400 1150
-Wire Wire Line
-	5400 850  5400 650 
-Wire Wire Line
-	5400 650  5600 650 
-$Comp
 L Device:LED_Small D17
 U 1 1 61CB9572
 P 5600 1250
@@ -490,29 +333,6 @@ F 3 "~" V 5600 1250 50  0001 C CNN
 	1    5600 1250
 	0    1    1    0   
 $EndComp
-$Comp
-L Device:R_Small R22
-U 1 1 61CB9578
-P 5600 950
-F 0 "R22" V 5650 1050 50  0000 L CNN
-F 1 "660R" V 5700 850 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 5600 950 50  0001 C CNN
-F 3 "~" H 5600 950 50  0001 C CNN
-	1    5600 950 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5600 1050 5600 1150
-Wire Wire Line
-	5600 850  5600 650 
-Connection ~ 5600 650 
-Wire Wire Line
-	5600 650  5800 650 
-Connection ~ 5800 650 
-Text Label 6950 650  0    50   ~ 0
-VCC_LED
-Wire Wire Line
-	6750 650  6950 650 
 $Comp
 L Device:LED_Small D21
 U 1 1 61CC9D0C
@@ -525,21 +345,6 @@ F 3 "~" V 6750 1250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small R27
-U 1 1 61CC9D12
-P 6750 950
-F 0 "R27" V 6800 1050 50  0000 L CNN
-F 1 "660R" V 6850 850 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 6750 950 50  0001 C CNN
-F 3 "~" H 6750 950 50  0001 C CNN
-	1    6750 950 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6750 1050 6750 1150
-Wire Wire Line
-	6750 850  6750 650 
-$Comp
 L Device:LED_Small D19
 U 1 1 61CC9D1A
 P 6350 1250
@@ -550,23 +355,6 @@ F 3 "~" V 6350 1250 50  0001 C CNN
 	1    6350 1250
 	0    1    1    0   
 $EndComp
-$Comp
-L Device:R_Small R25
-U 1 1 61CC9D20
-P 6350 950
-F 0 "R25" V 6400 1050 50  0000 L CNN
-F 1 "660R" V 6450 850 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 6350 950 50  0001 C CNN
-F 3 "~" H 6350 950 50  0001 C CNN
-	1    6350 950 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6350 1050 6350 1150
-Wire Wire Line
-	6350 850  6350 650 
-Wire Wire Line
-	6350 650  6550 650 
 $Comp
 L Device:LED_Small D20
 U 1 1 61CC9D29
@@ -579,29 +367,6 @@ F 3 "~" V 6550 1250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small R26
-U 1 1 61CC9D2F
-P 6550 950
-F 0 "R26" V 6600 1050 50  0000 L CNN
-F 1 "660R" V 6650 850 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 6550 950 50  0001 C CNN
-F 3 "~" H 6550 950 50  0001 C CNN
-	1    6550 950 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6550 1050 6550 1150
-Wire Wire Line
-	6550 850  6550 650 
-Connection ~ 6550 650 
-Wire Wire Line
-	6550 650  6750 650 
-Connection ~ 6750 650 
-Text Label 9000 6350 2    50   ~ 0
-VCC_LED
-Wire Wire Line
-	9200 6350 9000 6350
-$Comp
 L Device:LED_Small D31
 U 1 1 61DA7F25
 P 9200 5750
@@ -612,21 +377,6 @@ F 3 "~" V 9200 5750 50  0001 C CNN
 	1    9200 5750
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:R_Small R39
-U 1 1 61DA7F2B
-P 9200 6050
-F 0 "R39" V 9250 6150 50  0000 L CNN
-F 1 "660R" V 9300 5950 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 9200 6050 50  0001 C CNN
-F 3 "~" H 9200 6050 50  0001 C CNN
-	1    9200 6050
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	9200 5950 9200 5850
-Wire Wire Line
-	9200 6150 9200 6350
 $Comp
 L Device:LED_Small D33
 U 1 1 61DA7F33
@@ -639,23 +389,6 @@ F 3 "~" V 9600 5750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R41
-U 1 1 61DA7F39
-P 9600 6050
-F 0 "R41" V 9650 6150 50  0000 L CNN
-F 1 "660R" V 9700 5950 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 9600 6050 50  0001 C CNN
-F 3 "~" H 9600 6050 50  0001 C CNN
-	1    9600 6050
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	9600 5950 9600 5850
-Wire Wire Line
-	9600 6150 9600 6350
-Wire Wire Line
-	9600 6350 9400 6350
-$Comp
 L Device:LED_Small D32
 U 1 1 61DA7F42
 P 9400 5750
@@ -666,29 +399,6 @@ F 3 "~" V 9400 5750 50  0001 C CNN
 	1    9400 5750
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:R_Small R40
-U 1 1 61DA7F48
-P 9400 6050
-F 0 "R40" V 9450 6150 50  0000 L CNN
-F 1 "660R" V 9500 5950 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 9400 6050 50  0001 C CNN
-F 3 "~" H 9400 6050 50  0001 C CNN
-	1    9400 6050
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	9400 5950 9400 5850
-Wire Wire Line
-	9400 6150 9400 6350
-Connection ~ 9400 6350
-Wire Wire Line
-	9400 6350 9200 6350
-Connection ~ 9200 6350
-Text Label 10000 6350 2    50   ~ 0
-VCC_LED
-Wire Wire Line
-	10200 6350 10000 6350
 $Comp
 L Device:LED_Small D34
 U 1 1 61DA7F55
@@ -701,21 +411,6 @@ F 3 "~" V 10200 5750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R42
-U 1 1 61DA7F5B
-P 10200 6050
-F 0 "R42" V 10250 6150 50  0000 L CNN
-F 1 "660R" V 10300 5950 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 10200 6050 50  0001 C CNN
-F 3 "~" H 10200 6050 50  0001 C CNN
-	1    10200 6050
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	10200 5950 10200 5850
-Wire Wire Line
-	10200 6150 10200 6350
-$Comp
 L Device:LED_Small D36
 U 1 1 61DA7F63
 P 10600 5750
@@ -726,23 +421,6 @@ F 3 "~" V 10600 5750 50  0001 C CNN
 	1    10600 5750
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:R_Small R44
-U 1 1 61DA7F69
-P 10600 6050
-F 0 "R44" V 10650 6150 50  0000 L CNN
-F 1 "660R" V 10700 5950 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 10600 6050 50  0001 C CNN
-F 3 "~" H 10600 6050 50  0001 C CNN
-	1    10600 6050
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	10600 5950 10600 5850
-Wire Wire Line
-	10600 6150 10600 6350
-Wire Wire Line
-	10600 6350 10400 6350
 $Comp
 L Device:LED_Small D35
 U 1 1 61DA7F72
@@ -755,29 +433,6 @@ F 3 "~" V 10400 5750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R43
-U 1 1 61DA7F78
-P 10400 6050
-F 0 "R43" V 10450 6150 50  0000 L CNN
-F 1 "660R" V 10500 5950 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 10400 6050 50  0001 C CNN
-F 3 "~" H 10400 6050 50  0001 C CNN
-	1    10400 6050
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	10400 5950 10400 5850
-Wire Wire Line
-	10400 6150 10400 6350
-Connection ~ 10400 6350
-Wire Wire Line
-	10400 6350 10200 6350
-Connection ~ 10200 6350
-Text Label 8000 6350 2    50   ~ 0
-VCC_LED
-Wire Wire Line
-	8200 6350 8000 6350
-$Comp
 L Device:LED_Small D28
 U 1 1 61DA7F85
 P 8200 5750
@@ -788,21 +443,6 @@ F 3 "~" V 8200 5750 50  0001 C CNN
 	1    8200 5750
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:R_Small R36
-U 1 1 61DA7F8B
-P 8200 6050
-F 0 "R36" V 8250 6150 50  0000 L CNN
-F 1 "660R" V 8300 5950 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 8200 6050 50  0001 C CNN
-F 3 "~" H 8200 6050 50  0001 C CNN
-	1    8200 6050
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	8200 5950 8200 5850
-Wire Wire Line
-	8200 6150 8200 6350
 $Comp
 L Device:LED_Small D30
 U 1 1 61DA7F93
@@ -815,23 +455,6 @@ F 3 "~" V 8600 5750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R38
-U 1 1 61DA7F99
-P 8600 6050
-F 0 "R38" V 8650 6150 50  0000 L CNN
-F 1 "660R" V 8700 5950 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 8600 6050 50  0001 C CNN
-F 3 "~" H 8600 6050 50  0001 C CNN
-	1    8600 6050
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	8600 5950 8600 5850
-Wire Wire Line
-	8600 6150 8600 6350
-Wire Wire Line
-	8600 6350 8400 6350
-$Comp
 L Device:LED_Small D29
 U 1 1 61DA7FA2
 P 8400 5750
@@ -842,29 +465,6 @@ F 3 "~" V 8400 5750 50  0001 C CNN
 	1    8400 5750
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:R_Small R37
-U 1 1 61DA7FA8
-P 8400 6050
-F 0 "R37" V 8450 6150 50  0000 L CNN
-F 1 "660R" V 8500 5950 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 8400 6050 50  0001 C CNN
-F 3 "~" H 8400 6050 50  0001 C CNN
-	1    8400 6050
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	8400 5950 8400 5850
-Wire Wire Line
-	8400 6150 8400 6350
-Connection ~ 8400 6350
-Wire Wire Line
-	8400 6350 8200 6350
-Connection ~ 8200 6350
-Text Label 7050 6350 2    50   ~ 0
-VCC_LED
-Wire Wire Line
-	7250 6350 7050 6350
 $Comp
 L Device:LED_Small D22
 U 1 1 61DA7FB5
@@ -877,21 +477,6 @@ F 3 "~" V 7250 5750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R29
-U 1 1 61DA7FBB
-P 7250 6050
-F 0 "R29" V 7300 6150 50  0000 L CNN
-F 1 "660R" V 7350 5950 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 7250 6050 50  0001 C CNN
-F 3 "~" H 7250 6050 50  0001 C CNN
-	1    7250 6050
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	7250 5950 7250 5850
-Wire Wire Line
-	7250 6150 7250 6350
-$Comp
 L Device:LED_Small D24
 U 1 1 61DA7FC3
 P 7650 5750
@@ -902,23 +487,6 @@ F 3 "~" V 7650 5750 50  0001 C CNN
 	1    7650 5750
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:R_Small R32
-U 1 1 61DA7FC9
-P 7650 6050
-F 0 "R32" V 7700 6150 50  0000 L CNN
-F 1 "660R" V 7750 5950 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 7650 6050 50  0001 C CNN
-F 3 "~" H 7650 6050 50  0001 C CNN
-	1    7650 6050
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	7650 5950 7650 5850
-Wire Wire Line
-	7650 6150 7650 6350
-Wire Wire Line
-	7650 6350 7450 6350
 $Comp
 L Device:LED_Small D23
 U 1 1 61DA7FD2
@@ -931,25 +499,6 @@ F 3 "~" V 7450 5750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R30
-U 1 1 61DA7FD8
-P 7450 6050
-F 0 "R30" V 7500 6150 50  0000 L CNN
-F 1 "660R" V 7550 5950 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 7450 6050 50  0001 C CNN
-F 3 "~" H 7450 6050 50  0001 C CNN
-	1    7450 6050
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	7450 5950 7450 5850
-Wire Wire Line
-	7450 6150 7450 6350
-Connection ~ 7450 6350
-Wire Wire Line
-	7450 6350 7250 6350
-Connection ~ 7250 6350
-$Comp
 L IS32FL3237:IS32FL3237-TQLA3-TR IC1
 U 1 1 619A1A83
 P 6100 4400
@@ -960,10 +509,6 @@ F 3 "https://www.mouser.se/datasheet/2/198/IS32FL3237-1830487.pdf" H 7750 4900 5
 	1    6100 4400
 	-1   0    0    1   
 $EndComp
-Text Label 750  4400 1    50   ~ 0
-VCC_LED
-Wire Wire Line
-	750  4600 750  4400
 $Comp
 L Device:LED_Small D7
 U 1 1 61E7D657
@@ -976,21 +521,6 @@ F 3 "~" V 1350 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R11
-U 1 1 61E7D65D
-P 1050 4600
-F 0 "R11" V 1100 4700 50  0000 L CNN
-F 1 "660R" V 1150 4500 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 1050 4600 50  0001 C CNN
-F 3 "~" H 1050 4600 50  0001 C CNN
-	1    1050 4600
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1150 4600 1250 4600
-Wire Wire Line
-	950  4600 750  4600
-$Comp
 L Device:LED_Small D9
 U 1 1 61E7D665
 P 1350 5000
@@ -1001,23 +531,6 @@ F 3 "~" V 1350 5000 50  0001 C CNN
 	1    1350 5000
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_Small R13
-U 1 1 61E7D66B
-P 1050 5000
-F 0 "R13" V 1100 5100 50  0000 L CNN
-F 1 "660R" V 1150 4900 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 1050 5000 50  0001 C CNN
-F 3 "~" H 1050 5000 50  0001 C CNN
-	1    1050 5000
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1150 5000 1250 5000
-Wire Wire Line
-	950  5000 750  5000
-Wire Wire Line
-	750  5000 750  4800
 $Comp
 L Device:LED_Small D8
 U 1 1 61E7D674
@@ -1030,29 +543,6 @@ F 3 "~" V 1350 4800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R12
-U 1 1 61E7D67A
-P 1050 4800
-F 0 "R12" V 1100 4900 50  0000 L CNN
-F 1 "660R" V 1150 4700 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 1050 4800 50  0001 C CNN
-F 3 "~" H 1050 4800 50  0001 C CNN
-	1    1050 4800
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1150 4800 1250 4800
-Wire Wire Line
-	950  4800 750  4800
-Connection ~ 750  4800
-Wire Wire Line
-	750  4800 750  4600
-Connection ~ 750  4600
-Text Label 750  5400 1    50   ~ 0
-VCC_LED
-Wire Wire Line
-	750  5600 750  5400
-$Comp
 L Device:LED_Small D10
 U 1 1 61E7D687
 P 1350 5600
@@ -1063,21 +553,6 @@ F 3 "~" V 1350 5600 50  0001 C CNN
 	1    1350 5600
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_Small R14
-U 1 1 61E7D68D
-P 1050 5600
-F 0 "R14" V 1100 5700 50  0000 L CNN
-F 1 "660R" V 1150 5500 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 1050 5600 50  0001 C CNN
-F 3 "~" H 1050 5600 50  0001 C CNN
-	1    1050 5600
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1150 5600 1250 5600
-Wire Wire Line
-	950  5600 750  5600
 $Comp
 L Device:LED_Small D12
 U 1 1 61E7D695
@@ -1090,23 +565,6 @@ F 3 "~" V 1350 6000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R16
-U 1 1 61E7D69B
-P 1050 6000
-F 0 "R16" V 1100 6100 50  0000 L CNN
-F 1 "660R" V 1150 5900 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 1050 6000 50  0001 C CNN
-F 3 "~" H 1050 6000 50  0001 C CNN
-	1    1050 6000
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1150 6000 1250 6000
-Wire Wire Line
-	950  6000 750  6000
-Wire Wire Line
-	750  6000 750  5800
-$Comp
 L Device:LED_Small D11
 U 1 1 61E7D6A4
 P 1350 5800
@@ -1117,29 +575,6 @@ F 3 "~" V 1350 5800 50  0001 C CNN
 	1    1350 5800
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_Small R15
-U 1 1 61E7D6AA
-P 1050 5800
-F 0 "R15" V 1100 5900 50  0000 L CNN
-F 1 "660R" V 1150 5700 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 1050 5800 50  0001 C CNN
-F 3 "~" H 1050 5800 50  0001 C CNN
-	1    1050 5800
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1150 5800 1250 5800
-Wire Wire Line
-	950  5800 750  5800
-Connection ~ 750  5800
-Wire Wire Line
-	750  5800 750  5600
-Connection ~ 750  5600
-Text Label 750  3400 1    50   ~ 0
-VCC_LED
-Wire Wire Line
-	750  3600 750  3400
 $Comp
 L Device:LED_Small D4
 U 1 1 61E7D6B7
@@ -1152,21 +587,6 @@ F 3 "~" V 1350 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R8
-U 1 1 61E7D6BD
-P 1050 3600
-F 0 "R8" V 1100 3700 50  0000 L CNN
-F 1 "660R" V 1150 3500 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 1050 3600 50  0001 C CNN
-F 3 "~" H 1050 3600 50  0001 C CNN
-	1    1050 3600
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1150 3600 1250 3600
-Wire Wire Line
-	950  3600 750  3600
-$Comp
 L Device:LED_Small D6
 U 1 1 61E7D6C5
 P 1350 4000
@@ -1177,23 +597,6 @@ F 3 "~" V 1350 4000 50  0001 C CNN
 	1    1350 4000
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_Small R10
-U 1 1 61E7D6CB
-P 1050 4000
-F 0 "R10" V 1100 4100 50  0000 L CNN
-F 1 "660R" V 1150 3900 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 1050 4000 50  0001 C CNN
-F 3 "~" H 1050 4000 50  0001 C CNN
-	1    1050 4000
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1150 4000 1250 4000
-Wire Wire Line
-	950  4000 750  4000
-Wire Wire Line
-	750  4000 750  3800
 $Comp
 L Device:LED_Small D5
 U 1 1 61E7D6D4
@@ -1206,29 +609,6 @@ F 3 "~" V 1350 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R9
-U 1 1 61E7D6DA
-P 1050 3800
-F 0 "R9" V 1100 3900 50  0000 L CNN
-F 1 "660R" V 1150 3700 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 1050 3800 50  0001 C CNN
-F 3 "~" H 1050 3800 50  0001 C CNN
-	1    1050 3800
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1150 3800 1250 3800
-Wire Wire Line
-	950  3800 750  3800
-Connection ~ 750  3800
-Wire Wire Line
-	750  3800 750  3600
-Connection ~ 750  3600
-Text Label 750  2450 1    50   ~ 0
-VCC_LED
-Wire Wire Line
-	750  2650 750  2450
-$Comp
 L Device:LED_Small D1
 U 1 1 61E7D6E7
 P 1350 2650
@@ -1239,21 +619,6 @@ F 3 "~" V 1350 2650 50  0001 C CNN
 	1    1350 2650
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_Small R5
-U 1 1 61E7D6ED
-P 1050 2650
-F 0 "R5" V 1100 2750 50  0000 L CNN
-F 1 "660R" V 1150 2550 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 1050 2650 50  0001 C CNN
-F 3 "~" H 1050 2650 50  0001 C CNN
-	1    1050 2650
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1150 2650 1250 2650
-Wire Wire Line
-	950  2650 750  2650
 $Comp
 L Device:LED_Small D3
 U 1 1 61E7D6F5
@@ -1266,23 +631,6 @@ F 3 "~" V 1350 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R7
-U 1 1 61E7D6FB
-P 1050 3050
-F 0 "R7" V 1100 3150 50  0000 L CNN
-F 1 "660R" V 1150 2950 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 1050 3050 50  0001 C CNN
-F 3 "~" H 1050 3050 50  0001 C CNN
-	1    1050 3050
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1150 3050 1250 3050
-Wire Wire Line
-	950  3050 750  3050
-Wire Wire Line
-	750  3050 750  2850
-$Comp
 L Device:LED_Small D2
 U 1 1 61E7D704
 P 1350 2850
@@ -1293,25 +641,6 @@ F 3 "~" V 1350 2850 50  0001 C CNN
 	1    1350 2850
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_Small R6
-U 1 1 61E7D70A
-P 1050 2850
-F 0 "R6" V 1100 2950 50  0000 L CNN
-F 1 "660R" V 1150 2750 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 1050 2850 50  0001 C CNN
-F 3 "~" H 1050 2850 50  0001 C CNN
-	1    1050 2850
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1150 2850 1250 2850
-Wire Wire Line
-	950  2850 750  2850
-Connection ~ 750  2850
-Wire Wire Line
-	750  2850 750  2650
-Connection ~ 750  2650
 Wire Wire Line
 	10600 2500 10600 5650
 Wire Wire Line
@@ -1527,10 +856,10 @@ Wire Wire Line
 	3950 6800 3950 6950
 Connection ~ 4400 6800
 $Comp
-L power:GND #PWR?
+L power:GND #PWR06
 U 1 1 61B465E8
 P 3950 6950
-F 0 "#PWR?" H 3950 6700 50  0001 C CNN
+F 0 "#PWR06" H 3950 6700 50  0001 C CNN
 F 1 "GND" H 3955 6777 50  0000 C CNN
 F 2 "" H 3950 6950 50  0001 C CNN
 F 3 "" H 3950 6950 50  0001 C CNN
@@ -1545,10 +874,10 @@ Connection ~ 5400 6800
 Wire Wire Line
 	6350 4100 6350 4500
 $Comp
-L power:GND #PWR?
+L power:GND #PWR04
 U 1 1 61BBB01C
 P 3500 4500
-F 0 "#PWR?" H 3500 4250 50  0001 C CNN
+F 0 "#PWR04" H 3500 4250 50  0001 C CNN
 F 1 "GND" H 3505 4327 50  0000 C CNN
 F 2 "" H 3500 4500 50  0001 C CNN
 F 3 "" H 3500 4500 50  0001 C CNN
@@ -1562,4 +891,675 @@ Wire Wire Line
 Wire Wire Line
 	4250 2350 4250 2450
 Connection ~ 5200 2350
+$Comp
+L Device:R_Small R24
+U 1 1 619AC458
+P 4350 5900
+F 0 "R24" V 4154 5900 50  0000 C CNN
+F 1 "3.3k" V 4245 5900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4350 5900 50  0001 C CNN
+F 3 "~" H 4350 5900 50  0001 C CNN
+	1    4350 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 2850 1250 2850
+Wire Wire Line
+	1150 3050 1250 3050
+Wire Wire Line
+	1150 2650 1250 2650
+Wire Wire Line
+	1150 3800 1250 3800
+Wire Wire Line
+	1150 4000 1250 4000
+Wire Wire Line
+	1150 3600 1250 3600
+Wire Wire Line
+	1150 5800 1250 5800
+Wire Wire Line
+	1150 6000 1250 6000
+Wire Wire Line
+	1150 5600 1250 5600
+Wire Wire Line
+	1150 4800 1250 4800
+Wire Wire Line
+	1150 5000 1250 5000
+Wire Wire Line
+	1150 4600 1250 4600
+Connection ~ 750  2650
+Wire Wire Line
+	750  2850 750  2650
+Connection ~ 750  2850
+Wire Wire Line
+	950  2850 750  2850
+Wire Wire Line
+	750  3050 750  2850
+Wire Wire Line
+	950  3050 750  3050
+Wire Wire Line
+	950  2650 750  2650
+Wire Wire Line
+	750  2650 750  2450
+Text Label 750  2450 1    50   ~ 0
+VCC_LED
+Connection ~ 750  3600
+Wire Wire Line
+	750  3800 750  3600
+Connection ~ 750  3800
+Wire Wire Line
+	950  3800 750  3800
+Wire Wire Line
+	750  4000 750  3800
+Wire Wire Line
+	950  4000 750  4000
+Wire Wire Line
+	950  3600 750  3600
+Wire Wire Line
+	750  3600 750  3400
+Text Label 750  3400 1    50   ~ 0
+VCC_LED
+Connection ~ 750  5600
+Wire Wire Line
+	750  5800 750  5600
+Connection ~ 750  5800
+Wire Wire Line
+	950  5800 750  5800
+Wire Wire Line
+	750  6000 750  5800
+Wire Wire Line
+	950  6000 750  6000
+Wire Wire Line
+	950  5600 750  5600
+Wire Wire Line
+	750  5600 750  5400
+Text Label 750  5400 1    50   ~ 0
+VCC_LED
+Connection ~ 750  4600
+Wire Wire Line
+	750  4800 750  4600
+Connection ~ 750  4800
+Wire Wire Line
+	950  4800 750  4800
+Wire Wire Line
+	750  5000 750  4800
+Wire Wire Line
+	950  5000 750  5000
+Wire Wire Line
+	950  4600 750  4600
+Wire Wire Line
+	750  4600 750  4400
+Text Label 750  4400 1    50   ~ 0
+VCC_LED
+$Comp
+L Device:R_Small R6
+U 1 1 61E7D70A
+P 1050 2850
+F 0 "R6" V 1100 2950 50  0000 L CNN
+F 1 "660R" V 1150 2750 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 1050 2850 50  0001 C CNN
+F 3 "~" H 1050 2850 50  0001 C CNN
+	1    1050 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R7
+U 1 1 61E7D6FB
+P 1050 3050
+F 0 "R7" V 1100 3150 50  0000 L CNN
+F 1 "660R" V 1150 2950 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 1050 3050 50  0001 C CNN
+F 3 "~" H 1050 3050 50  0001 C CNN
+	1    1050 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R5
+U 1 1 61E7D6ED
+P 1050 2650
+F 0 "R5" V 1100 2750 50  0000 L CNN
+F 1 "660R" V 1150 2550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 1050 2650 50  0001 C CNN
+F 3 "~" H 1050 2650 50  0001 C CNN
+	1    1050 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R9
+U 1 1 61E7D6DA
+P 1050 3800
+F 0 "R9" V 1100 3900 50  0000 L CNN
+F 1 "660R" V 1150 3700 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 1050 3800 50  0001 C CNN
+F 3 "~" H 1050 3800 50  0001 C CNN
+	1    1050 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R10
+U 1 1 61E7D6CB
+P 1050 4000
+F 0 "R10" V 1100 4100 50  0000 L CNN
+F 1 "660R" V 1150 3900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 1050 4000 50  0001 C CNN
+F 3 "~" H 1050 4000 50  0001 C CNN
+	1    1050 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R8
+U 1 1 61E7D6BD
+P 1050 3600
+F 0 "R8" V 1100 3700 50  0000 L CNN
+F 1 "660R" V 1150 3500 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 1050 3600 50  0001 C CNN
+F 3 "~" H 1050 3600 50  0001 C CNN
+	1    1050 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R15
+U 1 1 61E7D6AA
+P 1050 5800
+F 0 "R15" V 1100 5900 50  0000 L CNN
+F 1 "660R" V 1150 5700 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 1050 5800 50  0001 C CNN
+F 3 "~" H 1050 5800 50  0001 C CNN
+	1    1050 5800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R16
+U 1 1 61E7D69B
+P 1050 6000
+F 0 "R16" V 1100 6100 50  0000 L CNN
+F 1 "660R" V 1150 5900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 1050 6000 50  0001 C CNN
+F 3 "~" H 1050 6000 50  0001 C CNN
+	1    1050 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R14
+U 1 1 61E7D68D
+P 1050 5600
+F 0 "R14" V 1100 5700 50  0000 L CNN
+F 1 "660R" V 1150 5500 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 1050 5600 50  0001 C CNN
+F 3 "~" H 1050 5600 50  0001 C CNN
+	1    1050 5600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R12
+U 1 1 61E7D67A
+P 1050 4800
+F 0 "R12" V 1100 4900 50  0000 L CNN
+F 1 "660R" V 1150 4700 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 1050 4800 50  0001 C CNN
+F 3 "~" H 1050 4800 50  0001 C CNN
+	1    1050 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R13
+U 1 1 61E7D66B
+P 1050 5000
+F 0 "R13" V 1100 5100 50  0000 L CNN
+F 1 "660R" V 1150 4900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 1050 5000 50  0001 C CNN
+F 3 "~" H 1050 5000 50  0001 C CNN
+	1    1050 5000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R11
+U 1 1 61E7D65D
+P 1050 4600
+F 0 "R11" V 1100 4700 50  0000 L CNN
+F 1 "660R" V 1150 4500 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 1050 4600 50  0001 C CNN
+F 3 "~" H 1050 4600 50  0001 C CNN
+	1    1050 4600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6550 1050 6550 1150
+Wire Wire Line
+	6350 1050 6350 1150
+Wire Wire Line
+	6750 1050 6750 1150
+Wire Wire Line
+	5600 1050 5600 1150
+Wire Wire Line
+	5400 1050 5400 1150
+Wire Wire Line
+	5800 1050 5800 1150
+Wire Wire Line
+	3600 1050 3600 1150
+Wire Wire Line
+	3400 1050 3400 1150
+Wire Wire Line
+	3800 1050 3800 1150
+Wire Wire Line
+	4600 1050 4600 1150
+Wire Wire Line
+	4400 1050 4400 1150
+Wire Wire Line
+	4800 1050 4800 1150
+Connection ~ 6750 650 
+Wire Wire Line
+	6550 650  6750 650 
+Connection ~ 6550 650 
+Wire Wire Line
+	6550 850  6550 650 
+Wire Wire Line
+	6350 650  6550 650 
+Wire Wire Line
+	6350 850  6350 650 
+Wire Wire Line
+	6750 850  6750 650 
+Wire Wire Line
+	6750 650  6950 650 
+Text Label 6950 650  0    50   ~ 0
+VCC_LED
+Connection ~ 5800 650 
+Wire Wire Line
+	5600 650  5800 650 
+Connection ~ 5600 650 
+Wire Wire Line
+	5600 850  5600 650 
+Wire Wire Line
+	5400 650  5600 650 
+Wire Wire Line
+	5400 850  5400 650 
+Wire Wire Line
+	5800 850  5800 650 
+Wire Wire Line
+	5800 650  6000 650 
+Text Label 6000 650  0    50   ~ 0
+VCC_LED
+Connection ~ 3800 650 
+Wire Wire Line
+	3600 650  3800 650 
+Connection ~ 3600 650 
+Wire Wire Line
+	3600 850  3600 650 
+Wire Wire Line
+	3400 650  3600 650 
+Wire Wire Line
+	3400 850  3400 650 
+Wire Wire Line
+	3800 850  3800 650 
+Wire Wire Line
+	3800 650  4000 650 
+Text Label 4000 650  0    50   ~ 0
+VCC_LED
+Connection ~ 4800 650 
+Wire Wire Line
+	4600 650  4800 650 
+Connection ~ 4600 650 
+Wire Wire Line
+	4600 850  4600 650 
+Wire Wire Line
+	4400 650  4600 650 
+Wire Wire Line
+	4400 850  4400 650 
+Wire Wire Line
+	4800 850  4800 650 
+Wire Wire Line
+	4800 650  5000 650 
+Text Label 5000 650  0    50   ~ 0
+VCC_LED
+$Comp
+L Device:R_Small R26
+U 1 1 61CC9D2F
+P 6550 950
+F 0 "R26" V 6600 1050 50  0000 L CNN
+F 1 "660R" V 6650 850 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 6550 950 50  0001 C CNN
+F 3 "~" H 6550 950 50  0001 C CNN
+	1    6550 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R25
+U 1 1 61CC9D20
+P 6350 950
+F 0 "R25" V 6400 1050 50  0000 L CNN
+F 1 "660R" V 6450 850 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 6350 950 50  0001 C CNN
+F 3 "~" H 6350 950 50  0001 C CNN
+	1    6350 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R27
+U 1 1 61CC9D12
+P 6750 950
+F 0 "R27" V 6800 1050 50  0000 L CNN
+F 1 "660R" V 6850 850 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 6750 950 50  0001 C CNN
+F 3 "~" H 6750 950 50  0001 C CNN
+	1    6750 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R22
+U 1 1 61CB9578
+P 5600 950
+F 0 "R22" V 5650 1050 50  0000 L CNN
+F 1 "660R" V 5700 850 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 5600 950 50  0001 C CNN
+F 3 "~" H 5600 950 50  0001 C CNN
+	1    5600 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R21
+U 1 1 61CB9569
+P 5400 950
+F 0 "R21" V 5450 1050 50  0000 L CNN
+F 1 "660R" V 5500 850 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 5400 950 50  0001 C CNN
+F 3 "~" H 5400 950 50  0001 C CNN
+	1    5400 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R23
+U 1 1 61CB955B
+P 5800 950
+F 0 "R23" V 5850 1050 50  0000 L CNN
+F 1 "660R" V 5900 850 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 5800 950 50  0001 C CNN
+F 3 "~" H 5800 950 50  0001 C CNN
+	1    5800 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R18
+U 1 1 61C87824
+P 3600 950
+F 0 "R18" V 3650 1050 50  0000 L CNN
+F 1 "660R" V 3700 850 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3600 950 50  0001 C CNN
+F 3 "~" H 3600 950 50  0001 C CNN
+	1    3600 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R17
+U 1 1 61C87815
+P 3400 950
+F 0 "R17" V 3450 1050 50  0000 L CNN
+F 1 "660R" V 3500 850 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3400 950 50  0001 C CNN
+F 3 "~" H 3400 950 50  0001 C CNN
+	1    3400 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R19
+U 1 1 61C87807
+P 3800 950
+F 0 "R19" V 3850 1050 50  0000 L CNN
+F 1 "660R" V 3900 850 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3800 950 50  0001 C CNN
+F 3 "~" H 3800 950 50  0001 C CNN
+	1    3800 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R34
+U 1 1 61BA07B6
+P 4600 950
+F 0 "R34" V 4650 1050 50  0000 L CNN
+F 1 "660R" V 4700 850 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4600 950 50  0001 C CNN
+F 3 "~" H 4600 950 50  0001 C CNN
+	1    4600 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R33
+U 1 1 61BA07A7
+P 4400 950
+F 0 "R33" V 4450 1050 50  0000 L CNN
+F 1 "660R" V 4500 850 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4400 950 50  0001 C CNN
+F 3 "~" H 4400 950 50  0001 C CNN
+	1    4400 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R35
+U 1 1 61BA0788
+P 4800 950
+F 0 "R35" V 4850 1050 50  0000 L CNN
+F 1 "660R" V 4900 850 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4800 950 50  0001 C CNN
+F 3 "~" H 4800 950 50  0001 C CNN
+	1    4800 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 5950 7450 5850
+Wire Wire Line
+	7650 5950 7650 5850
+Wire Wire Line
+	7250 5950 7250 5850
+Wire Wire Line
+	8400 5950 8400 5850
+Wire Wire Line
+	8600 5950 8600 5850
+Wire Wire Line
+	8200 5950 8200 5850
+Wire Wire Line
+	10400 5950 10400 5850
+Wire Wire Line
+	10600 5950 10600 5850
+Wire Wire Line
+	10200 5950 10200 5850
+Wire Wire Line
+	9400 5950 9400 5850
+Wire Wire Line
+	9600 5950 9600 5850
+Wire Wire Line
+	9200 5950 9200 5850
+Connection ~ 7250 6350
+Wire Wire Line
+	7450 6350 7250 6350
+Connection ~ 7450 6350
+Wire Wire Line
+	7450 6150 7450 6350
+Wire Wire Line
+	7650 6350 7450 6350
+Wire Wire Line
+	7650 6150 7650 6350
+Wire Wire Line
+	7250 6150 7250 6350
+Wire Wire Line
+	7250 6350 7050 6350
+Text Label 7050 6350 2    50   ~ 0
+VCC_LED
+Connection ~ 8200 6350
+Wire Wire Line
+	8400 6350 8200 6350
+Connection ~ 8400 6350
+Wire Wire Line
+	8400 6150 8400 6350
+Wire Wire Line
+	8600 6350 8400 6350
+Wire Wire Line
+	8600 6150 8600 6350
+Wire Wire Line
+	8200 6150 8200 6350
+Wire Wire Line
+	8200 6350 8000 6350
+Text Label 8000 6350 2    50   ~ 0
+VCC_LED
+Connection ~ 10200 6350
+Wire Wire Line
+	10400 6350 10200 6350
+Connection ~ 10400 6350
+Wire Wire Line
+	10400 6150 10400 6350
+Wire Wire Line
+	10600 6350 10400 6350
+Wire Wire Line
+	10600 6150 10600 6350
+Wire Wire Line
+	10200 6150 10200 6350
+Wire Wire Line
+	10200 6350 10000 6350
+Text Label 10000 6350 2    50   ~ 0
+VCC_LED
+Connection ~ 9200 6350
+Wire Wire Line
+	9400 6350 9200 6350
+Connection ~ 9400 6350
+Wire Wire Line
+	9400 6150 9400 6350
+Wire Wire Line
+	9600 6350 9400 6350
+Wire Wire Line
+	9600 6150 9600 6350
+Wire Wire Line
+	9200 6150 9200 6350
+Wire Wire Line
+	9200 6350 9000 6350
+Text Label 9000 6350 2    50   ~ 0
+VCC_LED
+$Comp
+L Device:R_Small R29
+U 1 1 61DA7FBB
+P 7250 6050
+F 0 "R29" V 7300 6150 50  0000 L CNN
+F 1 "660R" V 7350 5950 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 7250 6050 50  0001 C CNN
+F 3 "~" H 7250 6050 50  0001 C CNN
+	1    7250 6050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R37
+U 1 1 61DA7FA8
+P 8400 6050
+F 0 "R37" V 8450 6150 50  0000 L CNN
+F 1 "660R" V 8500 5950 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 8400 6050 50  0001 C CNN
+F 3 "~" H 8400 6050 50  0001 C CNN
+	1    8400 6050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R38
+U 1 1 61DA7F99
+P 8600 6050
+F 0 "R38" V 8650 6150 50  0000 L CNN
+F 1 "660R" V 8700 5950 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 8600 6050 50  0001 C CNN
+F 3 "~" H 8600 6050 50  0001 C CNN
+	1    8600 6050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R36
+U 1 1 61DA7F8B
+P 8200 6050
+F 0 "R36" V 8250 6150 50  0000 L CNN
+F 1 "660R" V 8300 5950 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 8200 6050 50  0001 C CNN
+F 3 "~" H 8200 6050 50  0001 C CNN
+	1    8200 6050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R43
+U 1 1 61DA7F78
+P 10400 6050
+F 0 "R43" V 10450 6150 50  0000 L CNN
+F 1 "660R" V 10500 5950 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 10400 6050 50  0001 C CNN
+F 3 "~" H 10400 6050 50  0001 C CNN
+	1    10400 6050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R44
+U 1 1 61DA7F69
+P 10600 6050
+F 0 "R44" V 10650 6150 50  0000 L CNN
+F 1 "660R" V 10700 5950 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 10600 6050 50  0001 C CNN
+F 3 "~" H 10600 6050 50  0001 C CNN
+	1    10600 6050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R42
+U 1 1 61DA7F5B
+P 10200 6050
+F 0 "R42" V 10250 6150 50  0000 L CNN
+F 1 "660R" V 10300 5950 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 10200 6050 50  0001 C CNN
+F 3 "~" H 10200 6050 50  0001 C CNN
+	1    10200 6050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R40
+U 1 1 61DA7F48
+P 9400 6050
+F 0 "R40" V 9450 6150 50  0000 L CNN
+F 1 "660R" V 9500 5950 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 9400 6050 50  0001 C CNN
+F 3 "~" H 9400 6050 50  0001 C CNN
+	1    9400 6050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R41
+U 1 1 61DA7F39
+P 9600 6050
+F 0 "R41" V 9650 6150 50  0000 L CNN
+F 1 "660R" V 9700 5950 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 9600 6050 50  0001 C CNN
+F 3 "~" H 9600 6050 50  0001 C CNN
+	1    9600 6050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R39
+U 1 1 61DA7F2B
+P 9200 6050
+F 0 "R39" V 9250 6150 50  0000 L CNN
+F 1 "660R" V 9300 5950 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 9200 6050 50  0001 C CNN
+F 3 "~" H 9200 6050 50  0001 C CNN
+	1    9200 6050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R30
+U 1 1 61DA7FD8
+P 7450 6050
+F 0 "R30" V 7500 6150 50  0000 L CNN
+F 1 "660R" V 7550 5950 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 7450 6050 50  0001 C CNN
+F 3 "~" H 7450 6050 50  0001 C CNN
+	1    7450 6050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R32
+U 1 1 61DA7FC9
+P 7650 6050
+F 0 "R32" V 7700 6150 50  0000 L CNN
+F 1 "660R" V 7750 5950 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 7650 6050 50  0001 C CNN
+F 3 "~" H 7650 6050 50  0001 C CNN
+	1    7650 6050
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
