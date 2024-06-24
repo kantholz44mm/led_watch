@@ -1630,7 +1630,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "063767cd-4ab9-4839-b50e-69c4c57496c7")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR025"
 			(at 138.43 54.61 0)
 			(effects
 				(font
@@ -1680,7 +1680,7 @@
 		(instances
 			(project "watch"
 				(path "/71c31975-2c45-4d18-a25a-18e07a55d11e/c88e79a5-24fb-4b9a-9b6f-dfb9921812a0"
-					(reference "#PWR040")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -1695,7 +1695,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0f4920e9-e4ee-4d01-9b5a-cc758aeed78d")
-		(property "Reference" "R25"
+		(property "Reference" "R22"
 			(at 128.27 77.47 90)
 			(effects
 				(font
@@ -1711,7 +1711,7 @@
 				)
 			)
 		)
-		(property "Footprint" "custom:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 125.73 74.93 0)
 			(effects
 				(font
@@ -1747,7 +1747,7 @@
 		(instances
 			(project "watch"
 				(path "/71c31975-2c45-4d18-a25a-18e07a55d11e/c88e79a5-24fb-4b9a-9b6f-dfb9921812a0"
-					(reference "R25")
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -1763,7 +1763,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "11353367-f888-4945-858c-721b6aa1f2ac")
-		(property "Reference" "L2"
+		(property "Reference" "L1"
 			(at 91.44 68.5799 0)
 			(effects
 				(font
@@ -1781,7 +1781,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 90.17 69.85 0)
 			(effects
 				(font
@@ -1817,7 +1817,7 @@
 		(instances
 			(project "watch"
 				(path "/71c31975-2c45-4d18-a25a-18e07a55d11e/c88e79a5-24fb-4b9a-9b6f-dfb9921812a0"
-					(reference "L2")
+					(reference "L1")
 					(unit 1)
 				)
 			)
@@ -1832,7 +1832,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2ac2e8f5-a69c-4726-8c70-19045f1a7908")
-		(property "Reference" "R24"
+		(property "Reference" "R21"
 			(at 123.19 77.47 90)
 			(effects
 				(font
@@ -1848,7 +1848,7 @@
 				)
 			)
 		)
-		(property "Footprint" "custom:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 120.65 74.93 0)
 			(effects
 				(font
@@ -1884,7 +1884,7 @@
 		(instances
 			(project "watch"
 				(path "/71c31975-2c45-4d18-a25a-18e07a55d11e/c88e79a5-24fb-4b9a-9b6f-dfb9921812a0"
-					(reference "R24")
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -1900,7 +1900,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4771930c-a9af-4481-9b24-cdde69694648")
-		(property "Reference" "BT2"
+		(property "Reference" "BT1"
 			(at 49.784 61.468 0)
 			(effects
 				(font
@@ -1918,7 +1918,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:BATHLD001"
+		(property "Footprint" "custom_lib:BatteryHolder_CR2016"
 			(at 68.58 59.436 90)
 			(effects
 				(font
@@ -1954,7 +1954,7 @@
 		(instances
 			(project "watch"
 				(path "/71c31975-2c45-4d18-a25a-18e07a55d11e/c88e79a5-24fb-4b9a-9b6f-dfb9921812a0"
-					(reference "BT2")
+					(reference "BT1")
 					(unit 1)
 				)
 			)
@@ -1969,7 +1969,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4b237d49-64a4-47e0-98b6-d398db1af953")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR024"
 			(at 106.68 91.44 0)
 			(effects
 				(font
@@ -2019,7 +2019,7 @@
 		(instances
 			(project "watch"
 				(path "/71c31975-2c45-4d18-a25a-18e07a55d11e/c88e79a5-24fb-4b9a-9b6f-dfb9921812a0"
-					(reference "#PWR039")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -2035,7 +2035,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5e2c333a-91a0-4496-86b2-e6d784b21751")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR023"
 			(at 68.58 54.61 0)
 			(effects
 				(font
@@ -2085,7 +2085,7 @@
 		(instances
 			(project "watch"
 				(path "/71c31975-2c45-4d18-a25a-18e07a55d11e/c88e79a5-24fb-4b9a-9b6f-dfb9921812a0"
-					(reference "#PWR042")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -2101,7 +2101,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6113f2bc-6f2b-4803-9eb4-620fbcd54764")
-		(property "Reference" "U4"
+		(property "Reference" "U3"
 			(at 106.68 46.99 0)
 			(effects
 				(font
@@ -2180,7 +2180,7 @@
 		(instances
 			(project "watch"
 				(path "/71c31975-2c45-4d18-a25a-18e07a55d11e/c88e79a5-24fb-4b9a-9b6f-dfb9921812a0"
-					(reference "U4")
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -2197,7 +2197,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9976583c-fdfa-42c8-946a-f0a9c7bebf0e")
-		(property "Reference" "C16"
+		(property "Reference" "C11"
 			(at 80.01 58.4262 0)
 			(effects
 				(font
@@ -2215,7 +2215,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 77.47 59.69 0)
 			(effects
 				(font
@@ -2251,7 +2251,7 @@
 		(instances
 			(project "watch"
 				(path "/71c31975-2c45-4d18-a25a-18e07a55d11e/c88e79a5-24fb-4b9a-9b6f-dfb9921812a0"
-					(reference "C16")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -2266,7 +2266,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b17de701-dac9-4d9c-81c2-72dafc9fe08f")
-		(property "Reference" "R26"
+		(property "Reference" "R23"
 			(at 133.35 77.47 90)
 			(effects
 				(font
@@ -2282,7 +2282,7 @@
 				)
 			)
 		)
-		(property "Footprint" "custom:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 130.81 74.93 0)
 			(effects
 				(font
@@ -2318,7 +2318,7 @@
 		(instances
 			(project "watch"
 				(path "/71c31975-2c45-4d18-a25a-18e07a55d11e/c88e79a5-24fb-4b9a-9b6f-dfb9921812a0"
-					(reference "R26")
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -2335,7 +2335,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e52d24c6-fcf1-4a1e-a5e7-fcd23f14fa28")
-		(property "Reference" "C17"
+		(property "Reference" "C12"
 			(at 140.97 59.6962 0)
 			(effects
 				(font
@@ -2353,7 +2353,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 138.43 60.96 0)
 			(effects
 				(font
@@ -2389,7 +2389,7 @@
 		(instances
 			(project "watch"
 				(path "/71c31975-2c45-4d18-a25a-18e07a55d11e/c88e79a5-24fb-4b9a-9b6f-dfb9921812a0"
-					(reference "C17")
+					(reference "C12")
 					(unit 1)
 				)
 			)
