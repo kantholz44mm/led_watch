@@ -4793,73 +4793,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 153.67 96.52 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1c275f69-360f-4706-a9bd-fb08d8de893b")
-		(property "Reference" "R10"
-			(at 153.67 93.726 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "330/660"
-			(at 153.67 91.186 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 153.67 94.742 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 153.67 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 153.67 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "319c27e7-a075-4bb0-ba39-a3913a3cd733")
-		)
-		(pin "2"
-			(uuid "de743c0c-2e07-4366-adee-0c324354ef27")
-		)
-		(instances
-			(project "watch"
-				(path "/71c31975-2c45-4d18-a25a-18e07a55d11e/e40ca063-c3e9-4e22-aa0d-eddf9b22e488"
-					(reference "R10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:LED")
 		(at 113.03 90.17 90)
 		(unit 1)
@@ -5268,73 +5201,6 @@
 			(project "watch"
 				(path "/71c31975-2c45-4d18-a25a-18e07a55d11e/e40ca063-c3e9-4e22-aa0d-eddf9b22e488"
 					(reference "D25")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 153.67 115.57 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "29bf5ea4-8ee7-4787-8baa-15d6145bec02")
-		(property "Reference" "R11"
-			(at 153.67 112.776 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "330/660"
-			(at 153.67 110.236 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 153.67 113.792 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 153.67 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 153.67 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "89f2ac00-2aaa-4091-9691-0a3e2fd64b2b")
-		)
-		(pin "2"
-			(uuid "0a10a0fa-b07f-411f-aea8-6cd93ee599cb")
-		)
-		(instances
-			(project "watch"
-				(path "/71c31975-2c45-4d18-a25a-18e07a55d11e/e40ca063-c3e9-4e22-aa0d-eddf9b22e488"
-					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -6103,6 +5969,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 153.67 115.57 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "408f28dd-bab6-48f5-bc48-1e4a5606aa27")
+		(property "Reference" "R11"
+			(at 153.67 112.776 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "47"
+			(at 153.67 110.236 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 153.67 113.792 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 153.67 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 153.67 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "55849d2d-2b20-4309-a4d8-17e78713a0d7")
+		)
+		(pin "2"
+			(uuid "307efda3-c498-4ebc-8f29-0bf843ad2b28")
+		)
+		(instances
+			(project "watch"
+				(path "/71c31975-2c45-4d18-a25a-18e07a55d11e/e40ca063-c3e9-4e22-aa0d-eddf9b22e488"
+					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 182.88 137.16 0)
 		(unit 1)
@@ -6249,7 +6182,7 @@
 				)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "1M"
 			(at 179.07 128.778 0)
 			(effects
 				(font
@@ -6363,6 +6296,73 @@
 			(project "watch"
 				(path "/71c31975-2c45-4d18-a25a-18e07a55d11e/e40ca063-c3e9-4e22-aa0d-eddf9b22e488"
 					(reference "D19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 153.67 134.62 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4f48b3ed-ad4b-434e-8a09-c420d980d823")
+		(property "Reference" "R12"
+			(at 153.67 131.826 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "47"
+			(at 153.67 129.286 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 153.67 132.842 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 153.67 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 153.67 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6966f353-98b0-4551-93a6-3419fd1169f4")
+		)
+		(pin "2"
+			(uuid "4eeba09f-b34f-4242-a907-61040de9a1f7")
+		)
+		(instances
+			(project "watch"
+				(path "/71c31975-2c45-4d18-a25a-18e07a55d11e/e40ca063-c3e9-4e22-aa0d-eddf9b22e488"
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -6570,73 +6570,6 @@
 			(project "watch"
 				(path "/71c31975-2c45-4d18-a25a-18e07a55d11e/e40ca063-c3e9-4e22-aa0d-eddf9b22e488"
 					(reference "D33")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 153.67 134.62 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "56b06efc-a7a2-4836-a4e1-96354b70320e")
-		(property "Reference" "R12"
-			(at 153.67 131.826 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "330/660"
-			(at 153.67 129.286 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 153.67 132.842 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 153.67 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 153.67 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "50380214-adf1-49dc-8e6f-583fa53b2608")
-		)
-		(pin "2"
-			(uuid "0a53ec6f-63d2-4ddc-b5a1-65fea94d3d0d")
-		)
-		(instances
-			(project "watch"
-				(path "/71c31975-2c45-4d18-a25a-18e07a55d11e/e40ca063-c3e9-4e22-aa0d-eddf9b22e488"
-					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -7692,7 +7625,7 @@
 				)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "1M"
 			(at 179.07 147.828 0)
 			(effects
 				(font
@@ -7962,7 +7895,7 @@
 				)
 			)
 		)
-		(property "Value" "330/660"
+		(property "Value" "47"
 			(at 153.67 72.136 90)
 			(effects
 				(font
@@ -8165,7 +8098,7 @@
 				)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "1M"
 			(at 179.07 90.678 0)
 			(effects
 				(font
@@ -9523,6 +9456,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 153.67 96.52 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ce3873bf-5498-48f5-a92c-1509ef03dcc3")
+		(property "Reference" "R10"
+			(at 153.67 93.726 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "47"
+			(at 153.67 91.186 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 153.67 94.742 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 153.67 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 153.67 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "058f3bbc-fde3-41a7-97a8-3ad101e88e16")
+		)
+		(pin "2"
+			(uuid "2996337d-769f-4d5f-aa68-ec5c83bf6833")
+		)
+		(instances
+			(project "watch"
+				(path "/71c31975-2c45-4d18-a25a-18e07a55d11e/e40ca063-c3e9-4e22-aa0d-eddf9b22e488"
+					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Transistor_FET:2N7002H")
 		(at 165.1 99.06 90)
 		(unit 1)
@@ -9682,7 +9682,7 @@
 				)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "1M"
 			(at 179.07 109.728 0)
 			(effects
 				(font
