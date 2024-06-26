@@ -1517,7 +1517,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "716ea99f-7756-4240-b40f-aae5326fb8ba")
-		(property "Reference" "C9"
+		(property "Reference" "C12"
 			(at 122.1232 68.6816 0)
 			(effects
 				(font
@@ -1571,7 +1571,7 @@
 		(instances
 			(project "watch"
 				(path "/71c31975-2c45-4d18-a25a-18e07a55d11e/53708456-0ae3-4e95-bf36-829cd83d6b3b"
-					(reference "C9")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -1587,7 +1587,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8776a1b0-ab43-419b-b5ae-0339b6a1586d")
-		(property "Reference" "C10"
+		(property "Reference" "C13"
 			(at 132.2832 68.6816 0)
 			(effects
 				(font
@@ -1641,7 +1641,7 @@
 		(instances
 			(project "watch"
 				(path "/71c31975-2c45-4d18-a25a-18e07a55d11e/53708456-0ae3-4e95-bf36-829cd83d6b3b"
-					(reference "C10")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -1827,7 +1827,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f1384613-4fe9-4070-8be0-59f756ba5140")
-		(property "Reference" "C8"
+		(property "Reference" "C11"
 			(at 111.9632 68.6816 0)
 			(effects
 				(font
@@ -1881,7 +1881,7 @@
 		(instances
 			(project "watch"
 				(path "/71c31975-2c45-4d18-a25a-18e07a55d11e/53708456-0ae3-4e95-bf36-829cd83d6b3b"
-					(reference "C8")
+					(reference "C11")
 					(unit 1)
 				)
 			)
