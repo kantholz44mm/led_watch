@@ -1525,6 +1525,16 @@
 	)
 	(wire
 		(pts
+			(xy 120.65 88.9) (xy 120.65 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c05c61f-1acf-412e-af41-ecf45eea2493")
+	)
+	(wire
+		(pts
 			(xy 96.52 74.93) (xy 90.17 74.93)
 		)
 		(stroke
@@ -1625,6 +1635,16 @@
 	)
 	(wire
 		(pts
+			(xy 116.84 54.61) (xy 142.24 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e2e8b57-76ea-4e2c-94a6-90020f97a1eb")
+	)
+	(wire
+		(pts
 			(xy 77.47 62.23) (xy 81.28 62.23)
 		)
 		(stroke
@@ -1705,7 +1725,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 69.85) (xy 120.65 95.25)
+			(xy 120.65 69.85) (xy 120.65 83.82)
 		)
 		(stroke
 			(width 0)
@@ -1752,16 +1772,6 @@
 			(type default)
 		)
 		(uuid "e371df46-248e-416a-b3db-ccb254e2a254")
-	)
-	(wire
-		(pts
-			(xy 116.84 54.61) (xy 142.24 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e7fe6810-1002-45b4-8d26-13352c6ad432")
 	)
 	(wire
 		(pts
@@ -2257,6 +2267,73 @@
 			(project "watch"
 				(path "/71c31975-2c45-4d18-a25a-18e07a55d11e/c88e79a5-24fb-4b9a-9b6f-dfb9921812a0"
 					(reference "L1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 120.65 86.36 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "35e4cd1c-3c77-45df-8da6-b286189c9af6")
+		(property "Reference" "R27"
+			(at 123.19 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "510"
+			(at 123.19 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 120.65 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 120.65 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 120.65 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "60e87d7e-c359-4b92-8688-5d81ad0da479")
+		)
+		(pin "2"
+			(uuid "a044cae1-1be0-4a85-8352-d203ef122a45")
+		)
+		(instances
+			(project "watch"
+				(path "/71c31975-2c45-4d18-a25a-18e07a55d11e/c88e79a5-24fb-4b9a-9b6f-dfb9921812a0"
+					(reference "R27")
 					(unit 1)
 				)
 			)
