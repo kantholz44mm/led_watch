@@ -4509,15 +4509,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349935"
-			(at 92.202 81.534 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "1ec3951b-ea38-4935-a7f6-80f4b2096c86")
 		)
@@ -4580,15 +4571,6 @@
 		)
 		(property "Description" "Light emitting diode"
 			(at 55.88 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C5349935"
-			(at 54.102 119.634 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4795,15 +4777,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349935"
-			(at 85.852 100.584 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "63ffd0ec-4c3d-4620-bd5e-17cd4d0c46d1")
 		)
@@ -4866,15 +4839,6 @@
 		)
 		(property "Description" "Light emitting diode"
 			(at 113.03 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C5349935"
-			(at 111.252 81.534 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4951,15 +4915,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349935"
-			(at 130.302 62.484 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "4617bbc6-b556-4ddd-8a7f-7ef25bb3e567")
 		)
@@ -5022,15 +4977,6 @@
 		)
 		(property "Description" "Light emitting diode"
 			(at 93.98 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C5349935"
-			(at 92.202 119.634 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5107,15 +5053,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349935"
-			(at 60.452 62.484 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "6a16f4f0-49ae-42d1-a447-4ff03d14137b")
 		)
@@ -5178,15 +5115,6 @@
 		)
 		(property "Description" "Light emitting diode"
 			(at 74.93 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C5349935"
-			(at 73.152 81.534 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5263,15 +5191,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349935"
-			(at 92.202 62.484 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "bd69f1e7-395a-47df-83c1-a6e70634439e")
 		)
@@ -5334,15 +5253,6 @@
 		)
 		(property "Description" "Light emitting diode"
 			(at 87.63 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C5349935"
-			(at 85.852 119.634 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5419,15 +5329,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349935"
-			(at 117.602 100.584 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "5b855e8b-d7c9-47c0-bc11-6d533b7896b6")
 		)
@@ -5490,15 +5391,6 @@
 		)
 		(property "Description" "Light emitting diode"
 			(at 62.23 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C5349935"
-			(at 60.452 81.534 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5575,15 +5467,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349935"
-			(at 117.602 119.634 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "e51af55d-6c1d-4bb5-b897-cf9dac622b1c")
 		)
@@ -5646,15 +5529,6 @@
 		)
 		(property "Description" "Light emitting diode"
 			(at 106.68 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C5349935"
-			(at 104.902 100.584 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5733,15 +5607,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2891732"
-			(at 165.1 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "3"
 			(uuid "62038c7c-1f48-47fa-bd45-b7c9e0cc6030")
 		)
@@ -5805,15 +5670,6 @@
 		)
 		(property "Description" "Resistor"
 			(at 189.23 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C25804"
-			(at 190.5 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5890,15 +5746,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349935"
-			(at 60.452 100.584 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "d29f818b-a1b6-4097-9386-a12c5ded06cf")
 		)
@@ -5961,15 +5808,6 @@
 		)
 		(property "Description" "Light emitting diode"
 			(at 144.78 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C5349935"
-			(at 143.002 62.484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6046,15 +5884,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349935"
-			(at 143.002 100.584 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "18290dd4-367f-43e1-9d7f-00f51fa0c425")
 		)
@@ -6124,15 +5953,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349935"
-			(at 136.652 119.634 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "ec93344e-7f54-4fda-9efe-52b4af04fc4b")
 		)
@@ -6193,15 +6013,6 @@
 		)
 		(property "Description" "Resistor"
 			(at 153.67 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C22950"
-			(at 153.67 112.776 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6406,15 +6217,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C22935"
-			(at 179.07 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "e3652ab2-05ce-4275-b11a-3f8ce7790280")
 		)
@@ -6484,15 +6286,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349935"
-			(at 79.502 100.584 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "6caa9238-bd86-471a-bdfa-46d7b721b735")
 		)
@@ -6553,15 +6346,6 @@
 		)
 		(property "Description" "Resistor"
 			(at 153.67 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C22950"
-			(at 153.67 131.826 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6638,15 +6422,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349935"
-			(at 85.852 81.534 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "77a12c04-3e55-44aa-abb0-51971e9d452f")
 		)
@@ -6709,15 +6484,6 @@
 		)
 		(property "Description" "Light emitting diode"
 			(at 132.08 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C5349935"
-			(at 130.302 100.584 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6794,15 +6560,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349935"
-			(at 104.902 62.484 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "a03b9537-54e1-4139-8fa2-c49ef22a8bd4")
 		)
@@ -6865,15 +6622,6 @@
 		)
 		(property "Description" "Light emitting diode"
 			(at 113.03 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C5349935"
-			(at 111.252 62.484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6950,15 +6698,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349935"
-			(at 73.152 100.584 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "63fb9f95-75f8-4970-89b4-93d359427ec7")
 		)
@@ -7021,15 +6760,6 @@
 		)
 		(property "Description" "Light emitting diode"
 			(at 100.33 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C5349935"
-			(at 98.552 119.634 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7106,15 +6836,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349935"
-			(at 130.302 81.534 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "32ea5421-a245-4149-84cf-c3473f75458e")
 		)
@@ -7177,15 +6898,6 @@
 		)
 		(property "Description" "Light emitting diode"
 			(at 68.58 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C5349935"
-			(at 66.802 62.484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7262,15 +6974,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349935"
-			(at 117.602 81.534 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "a7748eb4-8eb9-44bd-b04a-375fad00d909")
 		)
@@ -7333,15 +7036,6 @@
 		)
 		(property "Description" "Light emitting diode"
 			(at 100.33 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C5349935"
-			(at 98.552 81.534 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7418,15 +7112,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349935"
-			(at 98.552 100.584 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "c82cb30c-81b3-4492-93c6-dbe2511c5504")
 		)
@@ -7489,15 +7174,6 @@
 		)
 		(property "Description" "Light emitting diode"
 			(at 100.33 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C5349935"
-			(at 98.552 62.484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7574,15 +7250,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349935"
-			(at 123.952 62.484 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "86ca2a37-015b-44c1-83e5-e2b84512e59e")
 		)
@@ -7652,15 +7319,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349935"
-			(at 136.652 62.484 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "82c22f89-3f57-4ded-ac8b-2b1b852b926b")
 		)
@@ -7721,15 +7379,6 @@
 		)
 		(property "Description" "Resistor"
 			(at 189.23 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C25804"
-			(at 190.5 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7806,15 +7455,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349935"
-			(at 123.952 100.584 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "a1f08d66-9735-4c6c-afe5-1a6e499c7871")
 		)
@@ -7877,15 +7517,6 @@
 		)
 		(property "Description" "Light emitting diode"
 			(at 144.78 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C5349935"
-			(at 143.002 81.534 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7962,15 +7593,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349935"
-			(at 66.802 100.584 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "9c8ea0ce-a4d5-47c8-9f50-208271769f5c")
 		)
@@ -8031,15 +7653,6 @@
 		)
 		(property "Description" "Resistor"
 			(at 182.88 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C22935"
-			(at 179.07 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8181,15 +7794,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349935"
-			(at 54.102 100.584 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "011c96eb-0a96-43aa-a941-7f715c9be86d")
 		)
@@ -8259,15 +7863,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349935"
-			(at 54.102 81.534 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "ab27b060-017d-4aad-bc5b-ce9965bf691c")
 		)
@@ -8328,15 +7923,6 @@
 		)
 		(property "Description" "Resistor"
 			(at 153.67 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C22950"
-			(at 153.67 74.676 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8413,15 +7999,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349935"
-			(at 66.802 81.534 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "1b08b897-0529-4b60-a469-0e0b96c6cdb2")
 		)
@@ -8482,15 +8059,6 @@
 		)
 		(property "Description" "Resistor"
 			(at 189.23 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C25804"
-			(at 190.5 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8565,15 +8133,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C22935"
-			(at 179.07 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "a45b77ae-98fa-48c8-9fc1-aa9ad1b909cd")
 		)
@@ -8638,15 +8197,6 @@
 		)
 		(property "Description" "0.21A Id, 60V Vds, N-Channel MOSFET, SOT-23"
 			(at 165.1 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C2891732"
-			(at 165.1 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8726,15 +8276,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349935"
-			(at 104.902 119.634 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "915b67e1-5298-41bf-af50-ab3a7386b15d")
 		)
@@ -8797,15 +8338,6 @@
 		)
 		(property "Description" "Light emitting diode"
 			(at 119.38 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C5349935"
-			(at 117.602 62.484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8947,15 +8479,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349935"
-			(at 85.852 62.484 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "001716cf-8558-4afb-9be9-9ec48d6544e8")
 		)
@@ -9025,15 +8548,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349935"
-			(at 143.002 119.634 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "be7bdafa-2185-4bdb-83f7-07550aac4408")
 		)
@@ -9096,15 +8610,6 @@
 		)
 		(property "Description" "Light emitting diode"
 			(at 55.88 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C5349935"
-			(at 54.102 62.484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9248,15 +8753,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2891732"
-			(at 165.1 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "3"
 			(uuid "5752bd39-64e0-4156-8c14-0bddef9d481e")
 		)
@@ -9322,15 +8818,6 @@
 		)
 		(property "Description" "Light emitting diode"
 			(at 93.98 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C5349935"
-			(at 92.202 100.584 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9407,15 +8894,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349935"
-			(at 79.502 81.534 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "4c2fae41-9bd3-457f-9cb0-6531894dda25")
 		)
@@ -9478,15 +8956,6 @@
 		)
 		(property "Description" "Light emitting diode"
 			(at 132.08 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C5349935"
-			(at 130.302 119.634 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9563,15 +9032,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349935"
-			(at 104.902 81.534 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "e3b284a9-be17-4833-b986-ab466283d1f3")
 		)
@@ -9634,15 +9094,6 @@
 		)
 		(property "Description" "Light emitting diode"
 			(at 138.43 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C5349935"
-			(at 136.652 100.584 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9717,15 +9168,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25804"
-			(at 190.5 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "b7bea8b7-3991-454a-be33-f44f824914ce")
 		)
@@ -9788,15 +9230,6 @@
 		)
 		(property "Description" "Light emitting diode"
 			(at 113.03 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C5349935"
-			(at 111.252 100.584 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9938,15 +9371,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349935"
-			(at 136.652 81.534 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "971ebf6f-07f5-41be-86d1-5223c76ac208")
 		)
@@ -10009,15 +9433,6 @@
 		)
 		(property "Description" "Light emitting diode"
 			(at 62.23 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C5349935"
-			(at 60.452 119.634 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10092,15 +9507,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C22950"
-			(at 153.67 93.726 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "058f3bbc-fde3-41a7-97a8-3ad101e88e16")
 		)
@@ -10165,15 +9571,6 @@
 		)
 		(property "Description" "0.21A Id, 60V Vds, N-Channel MOSFET, SOT-23"
 			(at 165.1 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C2891732"
-			(at 165.1 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10253,15 +9650,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349935"
-			(at 79.502 119.634 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "1b9fc19a-b31d-48ee-91b1-f3c0f8b26aad")
 		)
@@ -10322,15 +9710,6 @@
 		)
 		(property "Description" "Resistor"
 			(at 182.88 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C22935"
-			(at 179.07 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10407,15 +9786,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349935"
-			(at 111.252 119.634 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "65717f04-3f76-499b-a5cc-92ac541437e8")
 		)
@@ -10478,15 +9848,6 @@
 		)
 		(property "Description" "Light emitting diode"
 			(at 68.58 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C5349935"
-			(at 66.802 119.634 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10563,15 +9924,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349935"
-			(at 123.952 81.534 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "b02344a2-4c64-4348-ad0d-33791fe0f733")
 		)
@@ -10634,15 +9986,6 @@
 		)
 		(property "Description" "Light emitting diode"
 			(at 81.28 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C5349935"
-			(at 79.502 62.484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10719,15 +10062,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349935"
-			(at 73.152 62.484 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "3cc4669c-5e2e-401c-8901-adc01fa8b1e0")
 		)
@@ -10797,15 +10131,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349935"
-			(at 123.952 119.634 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "0ba7af41-b712-4c9b-95bd-56e016b57026")
 		)
@@ -10868,15 +10193,6 @@
 		)
 		(property "Description" "Light emitting diode"
 			(at 74.93 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C5349935"
-			(at 73.152 119.634 0)
 			(effects
 				(font
 					(size 1.27 1.27)
