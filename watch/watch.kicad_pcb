@@ -11192,7 +11192,7 @@
 	(footprint "Resistor_SMD:R_Array_Concave_4x0402"
 		(layer "F.Cu")
 		(uuid "8dc2708e-bb8b-4c4a-864d-4554c0d5ff72")
-		(at 159.37 100.83)
+		(at 159.75 100.9)
 		(descr "Thick Film Chip Resistor Array, Wave soldering, Vishay CRA04P (see cra04p.pdf)")
 		(tags "resistor array")
 		(property "Reference" "RN1"

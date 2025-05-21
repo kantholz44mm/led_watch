@@ -8632,7 +8632,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Q_NMOS_GSD"
+		(property "Value" "DMN2991UFZ"
 			(at 445.77 325.12 0)
 			(effects
 				(font
@@ -9795,7 +9795,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Q_NMOS_GSD"
+		(property "Value" "DMN2991UFZ"
 			(at 481.33 325.12 0)
 			(effects
 				(font
@@ -11745,7 +11745,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Q_NMOS_GSD"
+		(property "Value" "DMN2991UFZ"
 			(at 408.94 325.12 0)
 			(effects
 				(font
@@ -16276,7 +16276,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Q_NMOS_GSD"
+		(property "Value" "DMN2991UFZ"
 			(at 373.38 325.12 0)
 			(effects
 				(font
