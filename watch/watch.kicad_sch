@@ -8641,7 +8641,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "DFN0603:DFN0606"
 			(at 444.5 317.5 0)
 			(effects
 				(font
@@ -9804,7 +9804,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "DFN0603:DFN0606"
 			(at 480.06 317.5 0)
 			(effects
 				(font
@@ -11754,7 +11754,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "DFN0603:DFN0606"
 			(at 407.67 317.5 0)
 			(effects
 				(font
@@ -16285,7 +16285,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "DFN0603:DFN0606"
 			(at 372.11 317.5 0)
 			(effects
 				(font

@@ -588,6 +588,119 @@
 			)
 		)
 	)
+	(footprint "DFN0603:DFN0606"
+		(layer "F.Cu")
+		(uuid "021e23c7-18a5-4259-a1ef-27e20f2067eb")
+		(at 169.605 84.48)
+		(property "Reference" "Q3"
+			(at 0 9.25 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "15686769-7c68-4cf7-8897-ed86f3e66a4a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "DMN2991UFZ"
+			(at -0.25 10.75 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "0914751c-c9d8-464f-8c51-c19f478d59d0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4b70d9e2-406e-4fa2-8c4d-1e87bcf73a59")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "N-MOSFET transistor, gate/source/drain"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "99a6bf4d-f6e5-49b5-9557-ce4128a3b3ae")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/622d1ba3-a630-48b0-bc6c-6a40297c6119")
+		(sheetname "/")
+		(sheetfile "watch.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -0.4 -0.4)
+			(end 0.4 0.4)
+			(stroke
+				(width 0.02)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "eb5c0eb7-b0ef-41a9-adf1-c4f263fc2709")
+		)
+		(fp_text user "${REFERENCE}"
+			(at -0.5 12.75 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "eb343e39-8828-46a3-a995-199c2a165463")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -0.25 -0.175)
+			(size 0.28 0.2)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 29 "LED_SINK_ROW2")
+			(pinfunction "G")
+			(pintype "input")
+			(thermal_bridge_angle 45)
+			(uuid "f9221586-3b9f-4eda-ac48-c6e9f13084d8")
+		)
+		(pad "2" smd rect
+			(at -0.25 0.175)
+			(size 0.28 0.2)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 2 "GND")
+			(pinfunction "S")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "15b07282-f3d1-4337-b5ab-7537f5aaa489")
+		)
+		(pad "3" smd rect
+			(at 0.195 0)
+			(size 0.35 0.6)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 30 "Net-(Q3-D)")
+			(pinfunction "D")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "8a3c4a3f-faf5-4f8c-b3d7-018de96eb762")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
 		(layer "F.Cu")
 		(uuid "06b6553b-8a6c-4d69-a2a2-22dc4f553506")
@@ -2269,6 +2382,119 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(footprint "DFN0603:DFN0606"
+		(layer "F.Cu")
+		(uuid "1ea82d9c-272b-4d98-8a30-d19d90fe3dbb")
+		(at 169.605 82.66)
+		(property "Reference" "Q2"
+			(at 0 9.25 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "75fcce85-10f4-4ec3-b992-c95d6e4e8e02")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "DMN2991UFZ"
+			(at -0.25 10.75 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "56a1c98b-56b1-4bd8-bb1d-a8c3e3f6e4f2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c42d5e7e-d71b-42e7-96c1-e9a45dbc9e5e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "N-MOSFET transistor, gate/source/drain"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dccd3b71-a35d-4ce8-868c-126e887bf17b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/001e3111-a224-4fc5-8468-3a38b71a548c")
+		(sheetname "/")
+		(sheetfile "watch.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -0.4 -0.4)
+			(end 0.4 0.4)
+			(stroke
+				(width 0.02)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "fedbf7c1-bf49-4114-a75a-561643b4e298")
+		)
+		(fp_text user "${REFERENCE}"
+			(at -0.5 12.75 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "1bc5ce72-8048-4a31-928d-a1204f75289e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -0.25 -0.175)
+			(size 0.28 0.2)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 27 "LED_SINK_ROW1")
+			(pinfunction "G")
+			(pintype "input")
+			(thermal_bridge_angle 45)
+			(uuid "0552867a-3ce9-464c-815e-db368ede159b")
+		)
+		(pad "2" smd rect
+			(at -0.25 0.175)
+			(size 0.28 0.2)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 2 "GND")
+			(pinfunction "S")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "25bf2316-5bb1-47db-887c-77808f8a29a8")
+		)
+		(pad "3" smd rect
+			(at 0.195 0)
+			(size 0.35 0.6)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 28 "Net-(Q2-D)")
+			(pinfunction "D")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "94a97af7-d418-4d12-90e3-2ea0c8f69ae9")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
@@ -10068,229 +10294,6 @@
 			)
 		)
 	)
-	(footprint "Package_TO_SOT_SMD:SOT-23"
-		(layer "F.Cu")
-		(uuid "7659b6fc-820a-48e9-92a6-c7416017d195")
-		(at 169.37 93.79)
-		(descr "SOT, 3 Pin (JEDEC TO-236 Var AB https://www.jedec.org/document_search?search_api_views_fulltext=TO-236), generated with kicad-footprint-generator ipc_gullwing_generator.py")
-		(tags "SOT TO_SOT_SMD")
-		(property "Reference" "Q4"
-			(at 0 -2.4 0)
-			(layer "F.SilkS")
-			(uuid "fa702992-e6d7-45a0-8972-ec557b9d096c")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "Q_NMOS_GSD"
-			(at 0 2.4 0)
-			(layer "F.Fab")
-			(uuid "854864c8-c9ac-4621-978c-4a93b8e7dd57")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "9f6cd6ba-e476-4382-8adb-aaf3ca971140")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" "N-MOSFET transistor, gate/source/drain"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ba0b72c3-ed2f-4003-a045-19b74bff5dac")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(path "/e143268e-8392-4483-9f8d-1b8a9ec1b773")
-		(sheetname "/")
-		(sheetfile "watch.kicad_sch")
-		(attr smd)
-		(fp_line
-			(start 0 -1.56)
-			(end -0.65 -1.56)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "060357a7-9a9b-4bfe-998c-45a412a33a31")
-		)
-		(fp_line
-			(start 0 -1.56)
-			(end 0.65 -1.56)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "4cd93ff4-952b-4b8b-a220-055746637367")
-		)
-		(fp_line
-			(start 0 1.56)
-			(end -0.65 1.56)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "44e2d36b-bb73-4be1-b171-5233abba53b6")
-		)
-		(fp_line
-			(start 0 1.56)
-			(end 0.65 1.56)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "3cd31e21-2346-460d-ac71-f3b51e5b449c")
-		)
-		(fp_poly
-			(pts
-				(xy -1.1625 -1.51) (xy -1.4025 -1.84) (xy -0.9225 -1.84)
-			)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill yes)
-			(layer "F.SilkS")
-			(uuid "11ace782-9f57-4b68-b8e9-4eddcce47061")
-		)
-		(fp_rect
-			(start -1.92 -1.7)
-			(end 1.92 1.7)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(fill no)
-			(layer "F.CrtYd")
-			(uuid "e354b90c-68cc-4222-b5f1-686280a95cc1")
-		)
-		(fp_line
-			(start -0.65 -1.125)
-			(end -0.325 -1.45)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "3fcb58c7-906f-4511-95b5-b352d4e4baec")
-		)
-		(fp_line
-			(start -0.65 1.45)
-			(end -0.65 -1.125)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "2626babf-c82b-4466-9d2d-a8388ab990e2")
-		)
-		(fp_line
-			(start -0.325 -1.45)
-			(end 0.65 -1.45)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "795d2c06-8b92-4f3e-ab81-1765ccb2c8c7")
-		)
-		(fp_line
-			(start 0.65 -1.45)
-			(end 0.65 1.45)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "a6e2ebff-82e9-4edf-aace-d812b448c163")
-		)
-		(fp_line
-			(start 0.65 1.45)
-			(end -0.65 1.45)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "0e851438-f181-42a7-9c15-8eff027b7e50")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(uuid "18b7c5ef-efdb-46bd-ace6-6a1d0bf6832c")
-			(effects
-				(font
-					(size 0.32 0.32)
-					(thickness 0.05)
-				)
-			)
-		)
-		(pad "1" smd roundrect
-			(at -0.9375 -0.95)
-			(size 1.475 0.6)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
-			(net 32 "LED_SINK_ROW3")
-			(pinfunction "G")
-			(pintype "input")
-			(uuid "8e2b9aa2-2b3a-4d63-a97e-474fb32bbb22")
-		)
-		(pad "2" smd roundrect
-			(at -0.9375 0.95)
-			(size 1.475 0.6)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
-			(net 2 "GND")
-			(pinfunction "S")
-			(pintype "passive")
-			(uuid "3b6174e1-ed91-4989-949b-cf99c65791db")
-		)
-		(pad "3" smd roundrect
-			(at 0.9375 0)
-			(size 1.475 0.6)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
-			(net 31 "Net-(Q4-D)")
-			(pinfunction "D")
-			(pintype "passive")
-			(uuid "03d9a548-0016-41a0-8383-766b95dafee3")
-		)
-		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-	)
 	(footprint "LED_SMD:LED_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "780e6489-fcf3-462a-84ca-99290c7ad376")
@@ -10730,229 +10733,6 @@
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0402_1005Metric.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-	)
-	(footprint "Package_TO_SOT_SMD:SOT-23"
-		(layer "F.Cu")
-		(uuid "7f8e4a51-9c26-4048-888f-f151ef9c7420")
-		(at 169.37 84.54)
-		(descr "SOT, 3 Pin (JEDEC TO-236 Var AB https://www.jedec.org/document_search?search_api_views_fulltext=TO-236), generated with kicad-footprint-generator ipc_gullwing_generator.py")
-		(tags "SOT TO_SOT_SMD")
-		(property "Reference" "Q2"
-			(at 0 -2.4 0)
-			(layer "F.SilkS")
-			(uuid "9cf27686-4983-4088-8ad4-048150343e29")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "Q_NMOS_GSD"
-			(at 0 2.4 0)
-			(layer "F.Fab")
-			(uuid "336d7791-ce26-492b-ac20-0179c771bc54")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "3c5a6002-7cf2-488f-8ecf-8852169f1374")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" "N-MOSFET transistor, gate/source/drain"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "b3742c1d-2355-4273-8e1e-a295ba9747f1")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(path "/001e3111-a224-4fc5-8468-3a38b71a548c")
-		(sheetname "/")
-		(sheetfile "watch.kicad_sch")
-		(attr smd)
-		(fp_line
-			(start 0 -1.56)
-			(end -0.65 -1.56)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "38afe881-dbc4-4da0-ba64-47fa193c1bb4")
-		)
-		(fp_line
-			(start 0 -1.56)
-			(end 0.65 -1.56)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "59ae9ec0-19c6-4358-9014-3c00e8cb6ca8")
-		)
-		(fp_line
-			(start 0 1.56)
-			(end -0.65 1.56)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "d765b8c0-b20f-4be1-a6b9-12391e431419")
-		)
-		(fp_line
-			(start 0 1.56)
-			(end 0.65 1.56)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "b205e9dc-5ce2-48dc-b776-7583d946f2eb")
-		)
-		(fp_poly
-			(pts
-				(xy -1.1625 -1.51) (xy -1.4025 -1.84) (xy -0.9225 -1.84)
-			)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill yes)
-			(layer "F.SilkS")
-			(uuid "f0d3cf18-70c0-4389-8b86-361e312096ca")
-		)
-		(fp_rect
-			(start -1.92 -1.7)
-			(end 1.92 1.7)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(fill no)
-			(layer "F.CrtYd")
-			(uuid "9db62cb0-96b6-4467-af97-2efc7740875a")
-		)
-		(fp_line
-			(start -0.65 -1.125)
-			(end -0.325 -1.45)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "aa85f8f1-5730-4e48-8b86-1984d8d4948c")
-		)
-		(fp_line
-			(start -0.65 1.45)
-			(end -0.65 -1.125)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "8a1256c8-8cc1-47c6-8e91-01d755ee2969")
-		)
-		(fp_line
-			(start -0.325 -1.45)
-			(end 0.65 -1.45)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "56a86447-161d-44b3-891e-d53e7952c567")
-		)
-		(fp_line
-			(start 0.65 -1.45)
-			(end 0.65 1.45)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "90fe4c2c-f6f3-464f-b7b6-d3fde6e906d1")
-		)
-		(fp_line
-			(start 0.65 1.45)
-			(end -0.65 1.45)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "c808200e-b6e8-4a1f-9e9e-f1c00f0d6333")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(uuid "cc37e6fe-3789-43c0-9a42-ea90e6a6cf1d")
-			(effects
-				(font
-					(size 0.32 0.32)
-					(thickness 0.05)
-				)
-			)
-		)
-		(pad "1" smd roundrect
-			(at -0.9375 -0.95)
-			(size 1.475 0.6)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
-			(net 27 "LED_SINK_ROW1")
-			(pinfunction "G")
-			(pintype "input")
-			(uuid "dc8d51a7-ffdf-45e2-8487-9ec1bfc322d8")
-		)
-		(pad "2" smd roundrect
-			(at -0.9375 0.95)
-			(size 1.475 0.6)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
-			(net 2 "GND")
-			(pinfunction "S")
-			(pintype "passive")
-			(uuid "8e33ab4f-eec0-40cd-ac26-489ed2b395b8")
-		)
-		(pad "3" smd roundrect
-			(at 0.9375 0)
-			(size 1.475 0.6)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
-			(net 28 "Net-(Q2-D)")
-			(pinfunction "D")
-			(pintype "passive")
-			(uuid "e9d9cb65-7a75-451f-9311-3607c670aa40")
-		)
-		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -14291,6 +14071,119 @@
 			)
 		)
 	)
+	(footprint "DFN0603:DFN0606"
+		(layer "F.Cu")
+		(uuid "ac8d65e7-1564-4fbd-9b8e-6bcf3a9f4a38")
+		(at 169.605 86.3)
+		(property "Reference" "Q4"
+			(at 0 9.25 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "e05e6d08-869a-42b4-825b-27286891c7ae")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "DMN2991UFZ"
+			(at -0.25 10.75 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "304c25e3-cf2b-4c10-9ea4-0222a8d445a7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "df3ee5f1-c46a-4932-9d8d-33867deddb4e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "N-MOSFET transistor, gate/source/drain"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0170e333-2e19-4fb6-bc49-74b7998d486c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/e143268e-8392-4483-9f8d-1b8a9ec1b773")
+		(sheetname "/")
+		(sheetfile "watch.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -0.4 -0.4)
+			(end 0.4 0.4)
+			(stroke
+				(width 0.02)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "044dd0db-e198-474b-adbd-0a15c2589803")
+		)
+		(fp_text user "${REFERENCE}"
+			(at -0.5 12.75 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "43e67e46-761c-49b9-a035-ef5e048b2aab")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -0.25 -0.175)
+			(size 0.28 0.2)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 32 "LED_SINK_ROW3")
+			(pinfunction "G")
+			(pintype "input")
+			(thermal_bridge_angle 45)
+			(uuid "3cb8ba36-a3b9-430f-8335-36ce04bc3a5b")
+		)
+		(pad "2" smd rect
+			(at -0.25 0.175)
+			(size 0.28 0.2)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 2 "GND")
+			(pinfunction "S")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "24d1949a-fa5b-4144-9fe9-4cfc0e7f5385")
+		)
+		(pad "3" smd rect
+			(at 0.195 0)
+			(size 0.35 0.6)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 31 "Net-(Q4-D)")
+			(pinfunction "D")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "1d38f075-e32d-416d-a536-31fac4544476")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "LED_SMD:LED_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "b0f7ddef-d256-4ab4-90f4-0ae207da3b20")
@@ -14505,229 +14398,6 @@
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0402_1005Metric.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-	)
-	(footprint "Package_TO_SOT_SMD:SOT-23"
-		(layer "F.Cu")
-		(uuid "b26d4f6c-29ef-4f05-bc13-57bf53dbedbf")
-		(at 169.37 79.915)
-		(descr "SOT, 3 Pin (JEDEC TO-236 Var AB https://www.jedec.org/document_search?search_api_views_fulltext=TO-236), generated with kicad-footprint-generator ipc_gullwing_generator.py")
-		(tags "SOT TO_SOT_SMD")
-		(property "Reference" "Q1"
-			(at 0 -2.4 0)
-			(layer "F.SilkS")
-			(uuid "e8798bfb-dd17-487f-9b7b-319f3d9645fe")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "Q_NMOS_GSD"
-			(at 0 2.4 0)
-			(layer "F.Fab")
-			(uuid "c27325ab-2fd7-437c-9fe5-eb7d6de15cd7")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "2c7d8c11-33cb-46d8-a3d6-da2238eb7bbe")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" "N-MOSFET transistor, gate/source/drain"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "5317c296-737a-45fa-ba7d-07f326e1de3a")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(path "/31fff993-ac0c-4ad8-932d-176467ce072c")
-		(sheetname "/")
-		(sheetfile "watch.kicad_sch")
-		(attr smd)
-		(fp_line
-			(start 0 -1.56)
-			(end -0.65 -1.56)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "6ef594ba-d71f-48b2-be7a-0b0228e22c7a")
-		)
-		(fp_line
-			(start 0 -1.56)
-			(end 0.65 -1.56)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "55ed06b2-7438-499d-9d97-0af2203ff142")
-		)
-		(fp_line
-			(start 0 1.56)
-			(end -0.65 1.56)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "6dadda15-b71f-4f89-ac6d-897ca897d91a")
-		)
-		(fp_line
-			(start 0 1.56)
-			(end 0.65 1.56)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "d77ecdcb-4b4f-43e1-b586-e5fc2781a2b1")
-		)
-		(fp_poly
-			(pts
-				(xy -1.1625 -1.51) (xy -1.4025 -1.84) (xy -0.9225 -1.84)
-			)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill yes)
-			(layer "F.SilkS")
-			(uuid "0daf6195-7ce1-454e-8e9d-cb9810877c1c")
-		)
-		(fp_rect
-			(start -1.92 -1.7)
-			(end 1.92 1.7)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(fill no)
-			(layer "F.CrtYd")
-			(uuid "fd5fdcd7-6dce-40e4-9077-9f126e77b6a1")
-		)
-		(fp_line
-			(start -0.65 -1.125)
-			(end -0.325 -1.45)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "cbde7ef3-054c-4931-bbb5-cee256d2eec8")
-		)
-		(fp_line
-			(start -0.65 1.45)
-			(end -0.65 -1.125)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "4ec30d4a-2abd-4f30-a454-51f146fbcc2e")
-		)
-		(fp_line
-			(start -0.325 -1.45)
-			(end 0.65 -1.45)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "2b529fdb-987d-461e-9a58-81fa2fe6109a")
-		)
-		(fp_line
-			(start 0.65 -1.45)
-			(end 0.65 1.45)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "b03ec28a-733e-4b21-9d0a-3982058e4290")
-		)
-		(fp_line
-			(start 0.65 1.45)
-			(end -0.65 1.45)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "655fb29c-e3e5-4e84-a98b-e0a25acc99b8")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(uuid "f16c3e41-0710-4106-9d74-aaab5803261a")
-			(effects
-				(font
-					(size 0.32 0.32)
-					(thickness 0.05)
-				)
-			)
-		)
-		(pad "1" smd roundrect
-			(at -0.9375 -0.95)
-			(size 1.475 0.6)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
-			(net 25 "LED_SINK_ROW0")
-			(pinfunction "G")
-			(pintype "input")
-			(uuid "0b29771e-a975-4480-b14e-570d1492b776")
-		)
-		(pad "2" smd roundrect
-			(at -0.9375 0.95)
-			(size 1.475 0.6)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
-			(net 2 "GND")
-			(pinfunction "S")
-			(pintype "passive")
-			(uuid "e2530291-d048-43bb-bdd5-85ddf9887e4b")
-		)
-		(pad "3" smd roundrect
-			(at 0.9375 0)
-			(size 1.475 0.6)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
-			(net 26 "Net-(Q1-D)")
-			(pinfunction "D")
-			(pintype "passive")
-			(uuid "b071150b-c9d2-40a3-bb16-05401c522159")
-		)
-		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -15162,6 +14832,119 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(footprint "DFN0603:DFN0606"
+		(layer "F.Cu")
+		(uuid "b7a0192b-1dab-4495-aa69-e5256fe9073b")
+		(at 169.605 80.84)
+		(property "Reference" "Q1"
+			(at 0 9.25 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "23f7db2a-146e-4c5b-aef9-5ca86f5c3caa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "DMN2991UFZ"
+			(at -0.25 10.75 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "e83bd00c-4869-43aa-ac8e-216cf6c4d3fe")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "65bb3772-3b49-4e91-b776-1cc3d122fe59")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "N-MOSFET transistor, gate/source/drain"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e2473bf0-745a-42d6-86c4-ffda834406b1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/31fff993-ac0c-4ad8-932d-176467ce072c")
+		(sheetname "/")
+		(sheetfile "watch.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -0.4 -0.4)
+			(end 0.4 0.4)
+			(stroke
+				(width 0.02)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "9bde892f-98b9-4842-a293-0e14e4fb0278")
+		)
+		(fp_text user "${REFERENCE}"
+			(at -0.5 12.75 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "f16bdb96-03e3-4102-999f-bda19685ab29")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -0.25 -0.175)
+			(size 0.28 0.2)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 25 "LED_SINK_ROW0")
+			(pinfunction "G")
+			(pintype "input")
+			(thermal_bridge_angle 45)
+			(uuid "941979fe-18c0-4d74-ad33-59b4470fce06")
+		)
+		(pad "2" smd rect
+			(at -0.25 0.175)
+			(size 0.28 0.2)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 2 "GND")
+			(pinfunction "S")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "f862af86-b175-40be-9c96-7a4f36f4063e")
+		)
+		(pad "3" smd rect
+			(at 0.195 0)
+			(size 0.35 0.6)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 26 "Net-(Q1-D)")
+			(pinfunction "D")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "73a0d475-ea97-4196-869b-c1e7926e4fe3")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
@@ -16338,229 +16121,6 @@
 			(uuid "0a7dac0d-680f-40d0-833f-4b663f96a42e")
 		)
 		(embedded_fonts no)
-	)
-	(footprint "Package_TO_SOT_SMD:SOT-23"
-		(layer "F.Cu")
-		(uuid "d9ef2b8a-d47c-4248-a9f9-1b04e28c36e7")
-		(at 169.37 89.165)
-		(descr "SOT, 3 Pin (JEDEC TO-236 Var AB https://www.jedec.org/document_search?search_api_views_fulltext=TO-236), generated with kicad-footprint-generator ipc_gullwing_generator.py")
-		(tags "SOT TO_SOT_SMD")
-		(property "Reference" "Q3"
-			(at 0 -2.4 0)
-			(layer "F.SilkS")
-			(uuid "5127145d-de84-42b0-83bf-f8e9f7fe4fd1")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "Q_NMOS_GSD"
-			(at 0 2.4 0)
-			(layer "F.Fab")
-			(uuid "2646ad81-b746-4418-a73c-be8c01e9f9fa")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "4de30759-e271-4d30-904c-f7044fd8eb98")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" "N-MOSFET transistor, gate/source/drain"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d7ce0305-7521-4ca1-829c-dae68e475a80")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(path "/622d1ba3-a630-48b0-bc6c-6a40297c6119")
-		(sheetname "/")
-		(sheetfile "watch.kicad_sch")
-		(attr smd)
-		(fp_line
-			(start 0 -1.56)
-			(end -0.65 -1.56)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "4ff707c9-ac0b-487c-b444-5575136a3fda")
-		)
-		(fp_line
-			(start 0 -1.56)
-			(end 0.65 -1.56)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "af694f3b-1c6f-4e93-8a19-769f99953cec")
-		)
-		(fp_line
-			(start 0 1.56)
-			(end -0.65 1.56)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "1db3cbd2-74d7-415a-8115-918f5ff935bd")
-		)
-		(fp_line
-			(start 0 1.56)
-			(end 0.65 1.56)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "705e4c4b-08b2-41c7-bf1b-b84adcba3a7f")
-		)
-		(fp_poly
-			(pts
-				(xy -1.1625 -1.51) (xy -1.4025 -1.84) (xy -0.9225 -1.84)
-			)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill yes)
-			(layer "F.SilkS")
-			(uuid "fb9cfd5a-4a81-4c89-a799-45bf73afdfb8")
-		)
-		(fp_rect
-			(start -1.92 -1.7)
-			(end 1.92 1.7)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(fill no)
-			(layer "F.CrtYd")
-			(uuid "6631af62-68fa-43e7-8232-059690629a5e")
-		)
-		(fp_line
-			(start -0.65 -1.125)
-			(end -0.325 -1.45)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "6eaa6ea1-0b5b-496a-abe9-730ec14d71f9")
-		)
-		(fp_line
-			(start -0.65 1.45)
-			(end -0.65 -1.125)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "a3587c8d-b14a-4668-9e75-d2e6e6786563")
-		)
-		(fp_line
-			(start -0.325 -1.45)
-			(end 0.65 -1.45)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "8941f650-2d79-491c-bc3e-2bdf858e2a7a")
-		)
-		(fp_line
-			(start 0.65 -1.45)
-			(end 0.65 1.45)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "c2da310a-d113-4b22-a609-7dc7751caee6")
-		)
-		(fp_line
-			(start 0.65 1.45)
-			(end -0.65 1.45)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "ea2cc3eb-4915-4618-af79-02275b90fc4b")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(uuid "a75169ab-8925-4b81-b75e-ff5c3aca9e95")
-			(effects
-				(font
-					(size 0.32 0.32)
-					(thickness 0.05)
-				)
-			)
-		)
-		(pad "1" smd roundrect
-			(at -0.9375 -0.95)
-			(size 1.475 0.6)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
-			(net 29 "LED_SINK_ROW2")
-			(pinfunction "G")
-			(pintype "input")
-			(uuid "b703b93f-bc62-4b62-a34e-3df845b68095")
-		)
-		(pad "2" smd roundrect
-			(at -0.9375 0.95)
-			(size 1.475 0.6)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
-			(net 2 "GND")
-			(pinfunction "S")
-			(pintype "passive")
-			(uuid "0e97a588-5d30-4bd0-b48b-8992e5a690f6")
-		)
-		(pad "3" smd roundrect
-			(at 0.9375 0)
-			(size 1.475 0.6)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
-			(net 30 "Net-(Q3-D)")
-			(pinfunction "D")
-			(pintype "passive")
-			(uuid "cef46b9f-3f47-4a3c-aca9-7cee63c05635")
-		)
-		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
 	)
 	(footprint "LED_SMD:LED_0402_1005Metric"
 		(layer "F.Cu")
