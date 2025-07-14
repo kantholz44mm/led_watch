@@ -99,4 +99,15 @@
 		(uuid "72685a0c-0248-4fc9-92e7-80924c7779b8")
 	)
 	(embedded_fonts no)
+	(model "/tmp/DFN0606H4-3.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 90 -0)
+		)
+	)
 )
