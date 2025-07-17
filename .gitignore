@@ -1,0 +1,5 @@
+*.lck
+*.bak
+production/
+watch-backups/
+fp-info-cache
