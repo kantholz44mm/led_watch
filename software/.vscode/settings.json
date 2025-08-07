@@ -1,0 +1,16 @@
+{
+    "files.associations": {
+        "*.pl": "prolog",
+        "cstddef": "c",
+        "queue": "c",
+        "stdint.h": "c"
+    },
+    "cortex-debug.gdbPath": "/usr/bin/arm-none-eabi-gdb",
+    "cortex-debug.JLinkGDBServerPath": "/usr/bin/JLinkGDBServer",
+    "cortex-debug.stutilPath": "/usr/bin/st-util",
+    "cortex-debug.variableUseNaturalFormat": false,
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}/inc",
+        "${workspaceFolder}/inc/cmsis"
+    ]
+}
