@@ -1,5 +1,5 @@
-*.lck
-*.bak
-production/
-watch-backups/
-fp-info-cache
+hardware/*.lck
+hardware/*.bak
+hardware/production/
+hardware/watch-backups/
+hardware/fp-info-cache
