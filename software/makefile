@@ -22,22 +22,28 @@ ASFLAGS += -Wall
 # C compilation directives.
 CFLAGS += -mcpu=$(MCU_SPEC)
 CFLAGS += -mthumb
+CFLAGS += -mfloat-abi=soft
 CFLAGS += -Wall
 CFLAGS += -g -fstack-usage
 CFLAGS += -I inc/cmsis
 CFLAGS += -I inc
 CFLAGS += -O0
 CFLAGS += -fmessage-length=0
-CFLAGS += --specs=nosys.specs
+CFLAGS += --specs=nano.specs
+CFLAGS += -std=c23
 
 # Linker directives.
 LSCRIPT = ./$(LD_SCRIPT)
 LFLAGS += -mcpu=$(MCU_SPEC)
 LFLAGS += -mthumb
 LFLAGS += -Wall
-LFLAGS += --specs=nosys.specs
+LFLAGS += --specs=nano.specs
 LFLAGS += -nostdlib
+LFLAGS += -lc
+LFLAGS += -lm
+LFLAGS += -O0
 LFLAGS += -T$(LSCRIPT)
+LFLAGS += -lgcc
 
 OBJS += $(patsubst %.s, %.o, $(shell ls src/*.s))
 OBJS += $(patsubst %.c, %.o, $(shell ls src/*.c))

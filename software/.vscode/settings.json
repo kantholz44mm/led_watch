@@ -1,16 +1,33 @@
 {
     "files.associations": {
         "*.pl": "prolog",
+        "*.dbclient-js": "javascript",
         "cstddef": "c",
         "queue": "c",
-        "stdint.h": "c"
+        "stdint.h": "c",
+        "gpio.h": "c",
+        "time.h": "c",
+        "cstdlib": "c",
+        "stm32l071xx.h": "c",
+        "i2c.h": "c",
+        "cmath": "cpp",
+        "valarray": "cpp",
+        "cstring": "c",
+        "variant": "c"
     },
     "cortex-debug.gdbPath": "/usr/bin/arm-none-eabi-gdb",
     "cortex-debug.JLinkGDBServerPath": "/usr/bin/JLinkGDBServer",
     "cortex-debug.stutilPath": "/usr/bin/st-util",
-    "cortex-debug.variableUseNaturalFormat": false,
+    "cortex-debug.variableUseNaturalFormat": true,
     "C_Cpp.default.includePath": [
         "${workspaceFolder}/inc",
-        "${workspaceFolder}/inc/cmsis"
+        "${workspaceFolder}/inc/cmsis",
+        "${workspaceFolder}/inc/hal"
+    ],
+    "C_Cpp.default.cStandard": "c23",
+    "C_Cpp.default.cppStandard": "c++23",
+    "C_Cpp.default.defines": [
+        "true=1",
+        "false=0"
     ]
 }
