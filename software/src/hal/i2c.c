@@ -28,12 +28,12 @@ void i2c_init()
     I2C1->TIMINGR |= 0x608U; // magic number generated with CubeMX tool
 
     I2C1->CR1 |= I2C_CR1_PE;
-    while(!(I2C1->CR1 & I2C_CR1_PE));
+    while((I2C1->CR1 & I2C_CR1_PE) == 0U);
 }
 
 void i2c_write(u8 address, const u8 *const bytes, u8 n)
 {
-    while(I2C1->CR2 & I2C_CR2_START);
+    while((I2C1->CR2 & I2C_CR2_START) != 0U);
 
     I2C1->CR2 &= ~I2C_CR2_SADD;
     I2C1->CR2 |=  address << 1;
@@ -44,7 +44,7 @@ void i2c_write(u8 address, const u8 *const bytes, u8 n)
     I2C1->CR2 |=  I2C_CR2_START;
 
     u8 sent = 0;
-    while((I2C1->ISR & I2C_ISR_TC) == 0)
+    while((I2C1->ISR & I2C_ISR_TC) == 0U)
     {
         if(I2C1->ISR & I2C_ISR_NACKF)
         {
@@ -52,7 +52,7 @@ void i2c_write(u8 address, const u8 *const bytes, u8 n)
             return;
         }
         
-        if(I2C1->ISR & I2C_ISR_TXIS)
+        if((I2C1->ISR & I2C_ISR_TXIS) != 0U)
         {
             I2C1->TXDR = bytes[sent];
             sent++;
@@ -64,7 +64,7 @@ void i2c_write(u8 address, const u8 *const bytes, u8 n)
 
 void i2c_read(u8 address, u8* const bytes, u8 n)
 {
-    while(I2C1->CR2 & I2C_CR2_START);
+    while((I2C1->CR2 & I2C_CR2_START) != 0U);
 
     I2C1->CR2  &= ~I2C_CR2_SADD;
     I2C1->CR2  |=  address << 1U;
@@ -73,10 +73,10 @@ void i2c_read(u8 address, u8* const bytes, u8 n)
     I2C1->CR2  |=  ((u32)n) << I2C_CR2_NBYTES_Pos;
     I2C1->CR2  |=  I2C_CR2_START;
 
-    u8 received = 0;
-    while((I2C1->ISR & I2C_ISR_TC) == 0)
+    u8 received = 0U;
+    while((I2C1->ISR & I2C_ISR_TC) == 0U)
     {
-        if(I2C1->ISR & I2C_ISR_RXNE)
+        if((I2C1->ISR & I2C_ISR_RXNE) != 0U)
         {
             bytes[received] = I2C1->RXDR;
             received++;

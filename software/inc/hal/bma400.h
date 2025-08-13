@@ -42,14 +42,13 @@ typedef struct {
 
 typedef enum {
 
+    BMA400_TAPTYPE_NONE   = 0x00,
     BMA400_TAPTYPE_SINGLE = 0x01,
     BMA400_TAPTYPE_DOUBLE = 0x02,
     BMA400_TAPTYPE_BOTH   = 0x03,
 
 } bma400_tap_type_t;
 
-typedef void(*bma400_tap_handler_t)(bma400_tap_type_t);
-
-void bma400_init(bma400_tap_handler_t single_tap, bma400_tap_handler_t double_tap);
+void bma400_init(void);
 void bma400_read_acceleration(bma400_accel_t* accel);
 float bma400_descent_angle(void);

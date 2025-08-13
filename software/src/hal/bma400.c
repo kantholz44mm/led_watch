@@ -6,29 +6,26 @@
 
 #define PI 3.14159265358979323846
 
-static bma400_tap_handler_t callback_single_tap = NULL;
-static bma400_tap_handler_t callback_double_tap = NULL;
-
 void isr_exti_15_4(void)
 {
     // get status, which resets the pending register on the BMA400
     u8 status_byte;
     i2c_read_register(BMA400_SLAVE_ADDRESS, BMA400_REGISTER_INT_STAT1, 1, &status_byte);
-
-    if(status_byte & 0x8U && callback_double_tap != NULL)
-    {
-        callback_double_tap(BMA400_TAPTYPE_DOUBLE);
-    }
-    else if(status_byte & 0x4U && callback_single_tap != NULL)
-    {
-        callback_single_tap(BMA400_TAPTYPE_SINGLE);
-    }
-
     // acknowledge interrupt
     EXTI->PR |= EXTI_PR_PIF13;
+
+    if(status_byte & 0x8U)
+    {
+        // double tap
+    }
+    else if(status_byte & 0x4U)
+    {
+        // single tap
+    }
+
 }
 
-void bma400_init(bma400_tap_handler_t single_tap, bma400_tap_handler_t double_tap)
+void bma400_init(void)
 {
     // perform soft reset
     i2c_write_register(BMA400_SLAVE_ADDRESS, BMA400_REGISTER_CMD, 0xB6U);
@@ -38,11 +35,6 @@ void bma400_init(bma400_tap_handler_t single_tap, bma400_tap_handler_t double_ta
 
     // set range to +/-2g, sample rate to 200Hz, high accuracy oversampling
     i2c_write_register(BMA400_SLAVE_ADDRESS, BMA400_REGISTER_ACC_CONFIG1, 0x39U);
-
-    if(single_tap == NULL && double_tap == NULL)
-    {
-        return;
-    }
 
     gpio_config_t int_pin_cfg = {
         .mode = GPIO_MODE_INPUT,
@@ -56,7 +48,7 @@ void bma400_init(bma400_tap_handler_t single_tap, bma400_tap_handler_t double_ta
 
     // enable SYSCFG and wait for it to boot
     RCC->APB2ENR |= RCC_APB2ENR_SYSCFGEN;
-    while((RCC->APB2ENR & RCC_APB2ENR_SYSCFGEN) == 0);
+    while((RCC->APB2ENR & RCC_APB2ENR_SYSCFGEN) == 0U);
 
     // set port C as input for EXTI13
     SYSCFG->EXTICR[3] &= ~SYSCFG_EXTICR4_EXTI13;
@@ -74,10 +66,6 @@ void bma400_init(bma400_tap_handler_t single_tap, bma400_tap_handler_t double_ta
     NVIC_SetPriority(EXTI4_15_IRQn, 1);
     NVIC_EnableIRQ(EXTI4_15_IRQn);
 
-    // install our callbacks
-    callback_single_tap = single_tap;
-    callback_double_tap = double_tap;
-
     // set tap configuration: x axis, moderate sensitivity
     i2c_write_register(BMA400_SLAVE_ADDRESS, BMA400_REGISTER_TAP_CONFIG, 0x14U);
 
@@ -87,12 +75,8 @@ void bma400_init(bma400_tap_handler_t single_tap, bma400_tap_handler_t double_ta
     // set INT1 pin to active low, open drain drive
     i2c_write_register(BMA400_SLAVE_ADDRESS, BMA400_REGISTER_INT12_IO_CTRL, 0x04U);
 
-    // enable tap / double tap interrupt based on which handler is installed
-    // also setup latched interrupt mode so we don't miss any
-    u8 interrupt_config = 0x80U;
-    if(single_tap != NULL) { interrupt_config |= 0x4U; }
-    if(double_tap != NULL) { interrupt_config |= 0x8U; }
-    i2c_write_register(BMA400_SLAVE_ADDRESS, BMA400_REGISTER_INT_CONFIG1, interrupt_config);
+    // enable tap / double tap interrupt and configure interrupt latching
+    i2c_write_register(BMA400_SLAVE_ADDRESS, BMA400_REGISTER_INT_CONFIG1, 0x8CU);
 }
 
 void bma400_read_acceleration(bma400_accel_t* accel)

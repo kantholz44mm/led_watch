@@ -13,7 +13,11 @@
         "cmath": "cpp",
         "valarray": "cpp",
         "cstring": "c",
-        "variant": "c"
+        "variant": "c",
+        "__locale": "cpp",
+        "chrono": "c",
+        "rtc.h": "c",
+        "fifo.h": "c"
     },
     "cortex-debug.gdbPath": "/usr/bin/arm-none-eabi-gdb",
     "cortex-debug.JLinkGDBServerPath": "/usr/bin/JLinkGDBServer",

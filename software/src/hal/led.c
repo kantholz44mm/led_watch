@@ -36,18 +36,32 @@ void led_set_active(u8 led)
     GPIO_TypeDef* const sink_base = (GPIO_TypeDef*)(IOPPERIPH_BASE + LED_SINK_PORT * 0x400UL);
     GPIO_TypeDef* const source_base = (GPIO_TypeDef*)(IOPPERIPH_BASE + LED_SOURCE_PORT * 0x400UL);
 
-    const u8 source_pin = led / LED_NUM_SINKS;
-    const u8 sink_pin = led % LED_NUM_SINKS;
+    if(led >= LED_NUM_LEDS)
+    {
+        led_deactivate();
+        return;
+    }
 
-    // set all sinks inactive
-    sink_base->ODR |= LED_PIN_MASK_SINK;
+    led = (91 - led);
+    if(led >= LED_NUM_LEDS)
+    {
+        led -= LED_NUM_LEDS;
+    }
 
-    // set all sources inactive
-    source_base->ODR &= ~LED_PIN_MASK_SOURCE;
+    const u8 source_pin = led >> LED_SINK_SHIFT_WIDTH;
+    const u8 sink_pin = led & (u8)LED_SINK_MASK;
 
-    // set the single sink active
-    sink_base->ODR &= ~(1UL << sink_pin);
+    sink_base->ODR |= LED_PIN_MASK_SINK;      // set all sinks inactive
+    source_base->ODR &= ~LED_PIN_MASK_SOURCE; // set all sources inactive
+    sink_base->ODR &= ~(1UL << sink_pin);     // set the single sink active
+    source_base->ODR |= (1UL << source_pin);  // set the single source active
+}
 
-    // set the single source active
-    source_base->ODR |= (1UL << source_pin);
+void led_deactivate(void)
+{
+    GPIO_TypeDef* const sink_base = (GPIO_TypeDef*)(IOPPERIPH_BASE + LED_SINK_PORT * 0x400UL);
+    GPIO_TypeDef* const source_base = (GPIO_TypeDef*)(IOPPERIPH_BASE + LED_SOURCE_PORT * 0x400UL);
+
+    sink_base->ODR |= LED_PIN_MASK_SINK;        // set all sinks inactive
+    source_base->ODR &= ~LED_PIN_MASK_SOURCE;   // set all sources inactive
 }
