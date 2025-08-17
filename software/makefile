@@ -45,17 +45,12 @@ LFLAGS += -O0
 LFLAGS += -T$(LSCRIPT)
 LFLAGS += -lgcc
 
-OBJS += $(patsubst %.s, %.o, $(shell ls src/*.s))
 OBJS += $(patsubst %.c, %.o, $(shell ls src/*.c))
 OBJS += $(patsubst %.c, %.o, $(shell ls src/**/*.c))
 OBJS := $(patsubst src/%, bin/%, $(OBJS))
 
 .PHONY: all
 all: bin/$(TARGET).bin bin/$(TARGET).elf
-
-bin/%.o: src/%.s
-	mkdir -p $(shell dirname $@)
-	$(CC) -x assembler-with-cpp $(ASFLAGS) $< -o $@
 
 bin/%.o: src/%.c
 	mkdir -p $(shell dirname $@)

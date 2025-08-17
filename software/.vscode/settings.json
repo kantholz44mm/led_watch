@@ -17,7 +17,11 @@
         "__locale": "cpp",
         "chrono": "c",
         "rtc.h": "c",
-        "fifo.h": "c"
+        "fifo.h": "c",
+        "ios": "c",
+        "standby.h": "c",
+        "animation.h": "c",
+        "math.h": "c"
     },
     "cortex-debug.gdbPath": "/usr/bin/arm-none-eabi-gdb",
     "cortex-debug.JLinkGDBServerPath": "/usr/bin/JLinkGDBServer",

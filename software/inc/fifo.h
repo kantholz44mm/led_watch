@@ -13,8 +13,9 @@ typedef struct {
 } fifo_t;
 
 void fifo_init(fifo_t* fifo, u8* buffer, u32 element_size, u32 num_elements);
-bool fifo_push(fifo_t* fifo, u8* new_element);
+bool fifo_push(fifo_t* fifo, u8* new_element, bool override);
 bool fifo_pop(fifo_t* fifo, u8* element);
+bool fifo_peek(fifo_t* fifo, u8* element);
 void fifo_clear(fifo_t* fifo);
 
 u32 fifo_num_elements(fifo_t* fifo);

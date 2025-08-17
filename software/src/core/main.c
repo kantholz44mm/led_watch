@@ -5,12 +5,11 @@
 #include "hal/bma400.h"
 #include "hal/rtc.h"
 #include "animation.h"
-
-u32 qbuf[4] = {0};
-fifo_t q = {0};
+#include "app/app.h"
 
 int main(void)
 {
+    // initialize every peripheral needed
     time_init();
     rtc_init();
     led_init();
@@ -18,17 +17,8 @@ int main(void)
     bma400_init();
     animation_init();
 
-    rtc_datetime_t datetime = rtc_get();
-    u8 hours = RTC_DATETIME_GET_HOURS(datetime);
-    u8 minutes = RTC_DATETIME_GET_MINUTES(datetime);
-    u8 seconds = RTC_DATETIME_GET_SECONDS(datetime);
+    // the workhorse
+    app_run();
 
-    animation_push_show_time(datetime, true);
-    
-    while(true)
-    {
-        
-    }
-    
     return 0;
 }

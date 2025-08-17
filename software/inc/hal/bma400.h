@@ -1,7 +1,10 @@
 #pragma once
 #include "types.h"
+#include "fifo.h"
+#include "hal/time.h"
 
-#define BMA400_SLAVE_ADDRESS    0x14U
+#define BMA400_SLAVE_ADDRESS            0x14U
+#define BMA400_TAP_EVENT_QUEUE_SIZE     8U
 
 typedef enum {
 
@@ -14,6 +17,7 @@ typedef enum {
     BMA400_REGISTER_ACC_Y_MSB       = 0x07U,
     BMA400_REGISTER_ACC_Z_LSB       = 0x08U,
     BMA400_REGISTER_ACC_Z_MSB       = 0x09U,
+    BMA400_REGISTER_TEMP_DATA       = 0x11U,
     BMA400_REGISTER_INT_STAT0       = 0x0EU,
     BMA400_REGISTER_INT_STAT1       = 0x0FU,
     BMA400_REGISTER_INT_STAT2       = 0x10U,
@@ -42,13 +46,22 @@ typedef struct {
 
 typedef enum {
 
-    BMA400_TAPTYPE_NONE   = 0x00,
     BMA400_TAPTYPE_SINGLE = 0x01,
     BMA400_TAPTYPE_DOUBLE = 0x02,
-    BMA400_TAPTYPE_BOTH   = 0x03,
 
 } bma400_tap_type_t;
 
+typedef struct {
+
+    bma400_tap_type_t type;
+    timespan_t timestamp;
+
+} bma400_tap_event_t;
+
+extern fifo_t bma400_tap_queue;
+
 void bma400_init(void);
-void bma400_read_acceleration(bma400_accel_t* accel);
-float bma400_descent_angle(void);
+void bma400_set_input_filter(bma400_tap_type_t type);
+void bma400_get_acceleration(bma400_accel_t* accel);
+float bma400_get_descent_angle(void);
+i8 bma400_get_temperature(void);
