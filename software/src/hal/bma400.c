@@ -100,6 +100,9 @@ void bma400_init(void)
 
     // disable all interrupts
     i2c_write_register(BMA400_SLAVE_ADDRESS, BMA400_REGISTER_INT_CONFIG1, 0x00U);
+
+    // enable only double taps
+    bma400_set_input_filter(BMA400_TAPTYPE_DOUBLE);
 }
 
 void bma400_set_input_filter(bma400_tap_type_t type)

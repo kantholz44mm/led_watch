@@ -20,4 +20,3 @@ static_assert(__builtin_popcount(LED_NUM_SINKS) == 1);
 
 void led_init(void);
 void led_set_active(u8 led);
-void led_deactivate(void);

@@ -5,11 +5,10 @@
 
 void app_state_show_time_on_enter(void)
 {
-    bma400_set_input_filter(BMA400_TAPTYPE_DOUBLE);
     rtc_datetime_t current_datetime = rtc_get();
 
     animation_stop_and_clear();
-    animation_push_show_time(current_datetime, true);
+    animation_push_show_time(current_datetime, false);
     animation_trigger_if_not_running();
 }
 

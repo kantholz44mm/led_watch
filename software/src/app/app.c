@@ -7,19 +7,19 @@
 #include "hal/bma400.h"
 #include "cmsis/stm32l071xx.h"
 
-#define APP_STATE(name) { \
+#define APP_STATE(name, interval) { \
             .on_enter = name##_on_enter, \
             .on_exit = name##_on_exit, \
             .tick = name##_tick, \
+            .tick_interval = interval \
         }
 
 static const app_state_t app_states[APP_STATE_COUNT] = {
-    APP_STATE(app_state_sleep),
-    APP_STATE(app_state_show_time),
-    APP_STATE(app_state_show_temp),
-    APP_STATE(app_state_set_time_hour),
-    APP_STATE(app_state_set_time_minute),
-    APP_STATE(app_state_set_time_second),
+    APP_STATE(app_state_sleep, TIMESPAN_FROM_MILLISECONDS(100U)),
+    APP_STATE(app_state_show_time, TIMESPAN_FROM_MILLISECONDS(100U)),
+    APP_STATE(app_state_show_temp, TIMESPAN_FROM_MILLISECONDS(100U)),
+    APP_STATE(app_state_set_time_hour, TIMESPAN_FROM_MILLISECONDS(20U)),
+    APP_STATE(app_state_set_time_minute, TIMESPAN_FROM_MILLISECONDS(20U)),
 };
 
 void app_run(void)
@@ -40,6 +40,10 @@ void app_run(void)
     while(true)
     {
         app_state_type_t next_state = app_states[current_state].tick();
+        timespan_t tick_delay = app_states[current_state].tick_interval;
+
+        time_wait_for(tick_delay);
+
         if(next_state != current_state)
         {
             if(app_states[current_state].on_exit != NULL)

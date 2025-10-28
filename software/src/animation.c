@@ -33,7 +33,7 @@ void isr_tim6(void)
     }
     else
     {
-        led_deactivate();
+        led_set_active(LED_NUM_LEDS);
     }
 }
 
@@ -136,6 +136,8 @@ void animation_push_linear_run_direction(u8 from, u8 to, u16 total_duration, boo
         frame.led = led;
         fifo_push(&animation_queue, (u8*)&frame, false);
     }
+
+    animation_push_off(10U);
 }
 
 void animation_push_blink(u8 led, u16 on_time, u16 off_time, u16 total_duration)
@@ -192,15 +194,15 @@ void animation_push_run_to_leds(u8* led, u8 n)
 
     for(u32 i = 0; i < n; i++)
     {
-        animation_push_linear_run(current_led, led[i], 1000U);
+        animation_push_linear_run(current_led, led[i], 500U);
         animation_push_off(50U);
         animation_push_blink(led[i], 100U, 100U, 600U);
-        animation_push_on(led[i], 500U);
+        animation_push_on(led[i], 250U);
 
         current_led = led[i];
     }
 
-    animation_push_off(50U);
+    animation_push_off(10U);
 }
 
 void animation_push_show_time(rtc_datetime_t datetime, bool show_seconds)
@@ -217,12 +219,12 @@ void animation_push_show_time(rtc_datetime_t datetime, bool show_seconds)
 
 void animation_push_show_temperature(i8 temperature)
 {
-    bool clockwise = temperature >= 0U;
+    bool clockwise = temperature >= 0;
     u8 target_led = (u8)((60 + temperature) % 60);
 
     animation_push_linear_run_direction(0U, target_led, 1000U, clockwise);
     animation_push_off(50U);
     animation_push_blink(target_led, 100U, 100U, 600U);
     animation_push_on(target_led, 500U);
-    animation_push_off(50U);
+    animation_push_off(10U);
 }

@@ -7,42 +7,32 @@
 #include <math.h>
 #define PI 3.14159265358979323846
 
-void private_on_enter(app_state_type_t type);
-void private_on_exit(app_state_type_t type);
 app_state_type_t private_tick(app_state_type_t type);
+
+
+
 
 void app_state_set_time_hour_on_enter(void)
 {
-    private_on_enter(APP_STATE_SET_TIME_HOUR);
+    animation_stop_and_clear();
 }
 
 void app_state_set_time_minute_on_enter(void)
 {
-    private_on_enter(APP_STATE_SET_TIME_MINUTE);
-}
-
-void app_state_set_time_second_on_enter(void)
-{
-    private_on_enter(APP_STATE_SET_TIME_SECOND);
+    animation_stop_and_clear();
 }
 
 
 
 void app_state_set_time_hour_on_exit(void)
 {
-    private_on_exit(APP_STATE_SET_TIME_HOUR);
+    while(animation_is_running());
 }
 
 void app_state_set_time_minute_on_exit(void)
 {
-    private_on_exit(APP_STATE_SET_TIME_MINUTE);
+    while(animation_is_running());
 }
-
-void app_state_set_time_second_on_exit(void)
-{
-    private_on_exit(APP_STATE_SET_TIME_SECOND);
-}
-
 
 
 
@@ -56,24 +46,7 @@ app_state_type_t app_state_set_time_minute_tick(void)
     return private_tick(APP_STATE_SET_TIME_MINUTE);
 }
 
-app_state_type_t app_state_set_time_second_tick(void)
-{
-    return private_tick(APP_STATE_SET_TIME_SECOND);
-}
 
-
-
-void private_on_enter(app_state_type_t type)
-{
-    animation_stop_and_clear();
-    led_deactivate();
-}
-
-void private_on_exit(app_state_type_t type)
-{
-    while(animation_is_running());
-    led_deactivate();
-}
 
 app_state_type_t private_tick(app_state_type_t type)
 {
@@ -93,12 +66,6 @@ app_state_type_t private_tick(app_state_type_t type)
                 animation_trigger_if_not_running();
                 return APP_STATE_SET_TIME_HOUR;
             }
-            case APP_STATE_SET_TIME_SECOND:
-            {
-                animation_push_linear_run_direction(0U, 0U, 500U, true);
-                animation_trigger_if_not_running();
-                return APP_STATE_SET_TIME_MINUTE;
-            }
             default: 
             {
                 return APP_STATE_SHOW_TIME;
@@ -108,7 +75,7 @@ app_state_type_t private_tick(app_state_type_t type)
 
     static u8 current_led = 0U;
     static timespan_t current_led_since = 0U;
-    static u8 time_components[3] = {0};
+    static u8 time_components[2] = {0};
 
     float descent_angle = bma400_get_descent_angle();
     float normalized_descent_angle = (descent_angle / (2.0 * PI));
@@ -134,23 +101,14 @@ app_state_type_t private_tick(app_state_type_t type)
                 animation_trigger_if_not_running();
                 current_led = 0U;
                 current_led_since = time_elapsed();
-                return APP_STATE_SET_TIME_SECOND;
-            }
-            case APP_STATE_SET_TIME_SECOND:
-            {
-                time_components[2] = led;
-                animation_push_blink(led, 100U, 100U, 600U);
-                animation_trigger_if_not_running();
-                current_led = 0U;
-                current_led_since = time_elapsed();
 
                 rtc_datetime_t datetime = 0U
                     | RTC_DATETIME_FORMAT_HOURS(time_components[0])
                     | RTC_DATETIME_FORMAT_MINUTES(time_components[1])
-                    | RTC_DATETIME_FORMAT_SECONDS(time_components[2])
+                    | RTC_DATETIME_FORMAT_SECONDS(0U)
                     | RTC_DATETIME_FORMAT_YEARS(25U)
-                    | RTC_DATETIME_FORMAT_MONTHS(8U)
-                    | RTC_DATETIME_FORMAT_DAYS(17U);
+                    | RTC_DATETIME_FORMAT_MONTHS(10U)
+                    | RTC_DATETIME_FORMAT_DAYS(25U);
                 rtc_set(datetime);
 
                 return APP_STATE_SHOW_TIME;

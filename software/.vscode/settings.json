@@ -21,7 +21,10 @@
         "ios": "c",
         "standby.h": "c",
         "animation.h": "c",
-        "math.h": "c"
+        "math.h": "c",
+        "text_encoding": "c",
+        "typeindex": "c",
+        "typeinfo": "c"
     },
     "cortex-debug.gdbPath": "/usr/bin/arm-none-eabi-gdb",
     "cortex-debug.JLinkGDBServerPath": "/usr/bin/JLinkGDBServer",

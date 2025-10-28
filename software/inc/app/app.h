@@ -20,7 +20,6 @@ typedef enum {
     APP_STATE_SHOW_TEMP,
     APP_STATE_SET_TIME_HOUR,
     APP_STATE_SET_TIME_MINUTE,
-    APP_STATE_SET_TIME_SECOND,
     APP_STATE_COUNT
 
 } app_state_type_t;
@@ -30,6 +29,8 @@ typedef struct {
     void(*on_enter)(void);
     void(*on_exit)(void);
     app_state_type_t(*tick)(void);
+
+    timespan_t tick_interval;
 
 } app_state_t;
 

@@ -1,5 +1,7 @@
 #include "hal/led.h"
 
+static u8 private_active_led = LED_NUM_LEDS;
+
 void led_init(void)
 {
     gpio_config_t sink_config = {
@@ -36,32 +38,33 @@ void led_set_active(u8 led)
     GPIO_TypeDef* const sink_base = (GPIO_TypeDef*)(IOPPERIPH_BASE + LED_SINK_PORT * 0x400UL);
     GPIO_TypeDef* const source_base = (GPIO_TypeDef*)(IOPPERIPH_BASE + LED_SOURCE_PORT * 0x400UL);
 
-    if(led >= LED_NUM_LEDS)
+    if(led == private_active_led)
     {
-        led_deactivate();
         return;
     }
 
-    led = (91 - led);
-    if(led >= LED_NUM_LEDS)
+    if(led < LED_NUM_LEDS)
     {
-        led -= LED_NUM_LEDS;
+        led = (91 - led);
+        if(led >= LED_NUM_LEDS)
+        {
+            led -= LED_NUM_LEDS;
+        }
+    
+        const u8 source_pin = led >> LED_SINK_SHIFT_WIDTH;
+        const u8 sink_pin = led & (u8)LED_SINK_MASK;
+    
+        sink_base->ODR |= LED_PIN_MASK_SINK;      // set all sinks inactive
+        source_base->ODR &= ~LED_PIN_MASK_SOURCE; // set all sources inactive
+        sink_base->ODR &= ~(1UL << sink_pin);     // set the single sink active
+        source_base->ODR |= (1UL << source_pin);  // set the single source active
+    }
+    else
+    {
+        // deactivate
+        source_base->ODR &= ~LED_PIN_MASK_SOURCE;   // set all sources inactive
+        sink_base->ODR |= LED_PIN_MASK_SINK;        // set all sinks inactive
     }
 
-    const u8 source_pin = led >> LED_SINK_SHIFT_WIDTH;
-    const u8 sink_pin = led & (u8)LED_SINK_MASK;
-
-    sink_base->ODR |= LED_PIN_MASK_SINK;      // set all sinks inactive
-    source_base->ODR &= ~LED_PIN_MASK_SOURCE; // set all sources inactive
-    sink_base->ODR &= ~(1UL << sink_pin);     // set the single sink active
-    source_base->ODR |= (1UL << source_pin);  // set the single source active
-}
-
-void led_deactivate(void)
-{
-    GPIO_TypeDef* const sink_base = (GPIO_TypeDef*)(IOPPERIPH_BASE + LED_SINK_PORT * 0x400UL);
-    GPIO_TypeDef* const source_base = (GPIO_TypeDef*)(IOPPERIPH_BASE + LED_SOURCE_PORT * 0x400UL);
-
-    sink_base->ODR |= LED_PIN_MASK_SINK;        // set all sinks inactive
-    source_base->ODR &= ~LED_PIN_MASK_SOURCE;   // set all sources inactive
+    private_active_led = led;
 }
