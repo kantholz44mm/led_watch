@@ -12,3 +12,4 @@ hardware/pcb/fp-info-cache
 datasheets/
 
 software/bin/
+hardware/pcb/fabrication-toolkit-options.json
