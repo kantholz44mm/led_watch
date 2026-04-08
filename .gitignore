@@ -8,5 +8,6 @@ hardware/watch-backups/
 hardware/fp-info-cache
 hardware/pcb/watch-backups/
 hardware/pcb/fp-info-cache
+datasheets/
 
 software/bin/
