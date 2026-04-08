@@ -1,7 +1,12 @@
 hardware/*.lck
 hardware/*.bak
+hardware/pcb/*.lck
+hardware/pcb/*.bak
 hardware/production/
+hardware/pcb/production/
 hardware/watch-backups/
 hardware/fp-info-cache
+hardware/pcb/watch-backups/
+hardware/pcb/fp-info-cache
 
 software/bin/
