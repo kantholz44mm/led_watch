@@ -2,6 +2,7 @@ hardware/*.lck
 hardware/*.bak
 hardware/pcb/*.lck
 hardware/pcb/*.bak
+hardware/*.FCBak
 hardware/production/
 hardware/pcb/production/
 hardware/watch-backups/
